@@ -2,7 +2,8 @@ package model
 
 import java.util.*
 
-class Section(name: String) {
+class Section(val name: String) {
+    val id: UUID = UUID.randomUUID()
     val products = mutableListOf<Product>()
     val created = Date()
     var updated = Date()

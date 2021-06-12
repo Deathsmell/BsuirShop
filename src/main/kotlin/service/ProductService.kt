@@ -1,13 +1,22 @@
 package service
 
+import `interface`.EntityQueryWrapper
 import model.Group
 import model.Product
+import sql.ProductEntityQueryWrapper
 import util.InputUtil
 import java.util.*
 
-class ProductService {
+class ProductService(
+    private val databaseService: DatabaseService
+){
+    private val queryWrapper: EntityQueryWrapper<Product> = ProductEntityQueryWrapper()
+
     fun createProduct(name: String, price: Float): Product {
-        return Product(name, price)
+        val product = Product(name, price)
+        val query = queryWrapper.insert(product)
+        databaseService.executeUpdate(query)
+        return product
     }
 
     fun addGroup(product: Product, group: Group): Product {

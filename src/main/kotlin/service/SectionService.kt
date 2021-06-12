@@ -1,21 +1,35 @@
 package service
 
+import `interface`.EntityQueryWrapper
 import model.Product
 import model.Section
+import sql.SectionEntityQueryWrapper
 import java.util.*
 
-class SectionService {
+class SectionService(
+    private val databaseService: DatabaseService,
+){
+    private val queryWrapper: EntityQueryWrapper<Section> = SectionEntityQueryWrapper()
 
     fun createSection(name: String): Section {
-        return Section(name)
+        val section = Section(name)
+        val query = queryWrapper.insert(section)
+        databaseService.executeUpdate(query)
+        return section
     }
 
     fun createSection(name: String, product: Product): Section {
-        return Section(name, listOf(product))
+        val section = Section(name, listOf(product))
+        val query = queryWrapper.insert(section)
+        databaseService.executeUpdate(query)
+        return section
     }
 
     fun createSection(name: String, products: Iterable<Product>): Section {
-        return Section(name, products)
+        val section = Section(name, products)
+        val query = queryWrapper.insert(section)
+        databaseService.executeUpdate(query)
+        return section
     }
 
     fun addProduct(section: Section, product: Product): Section {

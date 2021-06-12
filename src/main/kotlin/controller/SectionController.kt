@@ -6,8 +6,8 @@ import service.SectionService
 import util.InputUtil
 
 class SectionController(
-    val sectionService: SectionService,
-    val productController: ProductController,
+    private val sectionService: SectionService,
+    private val productController: ProductController,
 ) {
 
     private val approvals = listOf("Y", "Yes")

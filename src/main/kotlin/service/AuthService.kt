@@ -1,25 +1,29 @@
 package service
 
-class AuthService {
+class AuthService(
+    private val databaseService: DatabaseService
+) {
     private var isAuth: Boolean = false
 
      fun authentication() {
-        while (!isAuth) {
+        do {
             print("Enter username: ")
             val username = readLine()
             print("Enter password: ")
             val password = readLine()
             if (getAuthentication(username, password)) {
-                print("You connected")
+                println("You connected")
                 isAuth = true
             } else {
-                print("Illegal credential. Please, try again")
+                println("Illegal credential. Please, try again")
             }
-            print("\n")
-        }
+        } while (!isAuth)
     }
 
     private fun getAuthentication(username: String?, password: String?): Boolean {
-        return username == "test"
+        if (username.isNullOrEmpty() || password.isNullOrEmpty()) {
+            return false
+        }
+        return databaseService.createConnection(username, password)
     }
 }
