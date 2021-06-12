@@ -1,6 +1,6 @@
 package sql
 
-import `interface`.EntityQueryWrapper
+import interfaces.EntityQueryWrapper
 import constant.SqlQueryConstant
 import model.Product
 import util.DateUtil

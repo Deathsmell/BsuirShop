@@ -1,16 +1,23 @@
 import controller.ProductController
 import controller.SectionController
-import service.AuthService
-import service.DatabaseService
-import service.ProductService
-import service.SectionService
+import pages.PageFactory
+import pages.Pages
+import service.*
 
-fun main(args: Array<String>) {
+fun main() {
+
     val databaseService = DatabaseService()
-    AuthService(databaseService).authentication()
+    val authService = AuthService(databaseService)
+
+    authService.authentication()
+
     val productService = ProductService(databaseService)
     val sectionService = SectionService(databaseService)
     val productController = ProductController(productService)
     val sectionController = SectionController(sectionService, productController)
-    sectionController.createNewSection()
+    val pageFactory = PageFactory(sectionController, productController)
+
+    while (true) {
+        pageFactory.create(Pages.MAIN)
+    }
 }

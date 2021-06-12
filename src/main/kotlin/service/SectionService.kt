@@ -1,6 +1,6 @@
 package service
 
-import `interface`.EntityQueryWrapper
+import interfaces.EntityQueryWrapper
 import model.Product
 import model.Section
 import sql.SectionEntityQueryWrapper

@@ -1,6 +1,6 @@
 package service
 
-import `interface`.EntityQueryWrapper
+import interfaces.EntityQueryWrapper
 import model.Group
 import model.Product
 import sql.ProductEntityQueryWrapper
@@ -14,6 +14,13 @@ class ProductService(
 
     fun createProduct(name: String, price: Float): Product {
         val product = Product(name, price)
+        val query = queryWrapper.insert(product)
+        databaseService.executeUpdate(query)
+        return product
+    }
+
+    fun createProduct(name: String, price: Float, description: String): Product {
+        val product = Product(name, price, description)
         val query = queryWrapper.insert(product)
         databaseService.executeUpdate(query)
         return product

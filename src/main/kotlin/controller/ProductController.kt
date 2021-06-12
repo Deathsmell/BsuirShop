@@ -12,8 +12,19 @@ class ProductController(val productService: ProductService) {
         return productService.createProduct(productName, productPrice)
     }
 
+    fun createNewProductWithDescription(): Product {
+        val productName = getProductName()
+        val productDescription = getProductDescription()
+        val productPrice = getProductPrice()
+        return productService.createProduct(productName, productPrice, productDescription)
+    }
+
     private fun getProductName(): String {
         return InputUtil.getString("Enter name: ")
+    }
+
+    private fun getProductDescription(): String {
+        return InputUtil.getString("Enter description: ")
     }
 
     private fun getProductPrice(): Float {
