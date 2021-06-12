@@ -1,4 +1,4 @@
-package components
+package components.product
 
 import controller.ProductController
 import interfaces.UICase

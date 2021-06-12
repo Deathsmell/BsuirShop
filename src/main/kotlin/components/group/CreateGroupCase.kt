@@ -1,4 +1,4 @@
-package components
+package components.group
 
 import controller.GroupController
 import interfaces.UICase

@@ -1,4 +1,4 @@
-package components
+package components.section
 
 import controller.SectionController
 import interfaces.UICase

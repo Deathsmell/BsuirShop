@@ -10,7 +10,7 @@ class UIContainer(private val actions: List<UICase>) {
         var variant: Int
         do {
             variant = InputUtil.getInteger("Chose action: ", "Variant must be integer!")
-            val isValidVariant = variant > 0 && variant < actions.size
+            val isValidVariant = variant >= 0 && variant < actions.size
             if (!isValidVariant) {
                 println("Variant value must be biggest than 0 and lowest than ${actions.size}")
             }

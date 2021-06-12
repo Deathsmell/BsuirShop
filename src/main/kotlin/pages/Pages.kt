@@ -1,5 +1,8 @@
 package pages
 
 enum class Pages {
-    MAIN()
+    MAIN,
+    SECTION,
+    PRODUCT,
+    GROUP,
 }
