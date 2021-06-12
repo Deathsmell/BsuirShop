@@ -1,31 +1,28 @@
 package pages
 
-import components.AddSectionCase
+import components.CreateGroupCase
+import components.CreateSectionCase
 import components.CreateProductCase
+import controller.GroupController
 import controller.ProductController
 import controller.SectionController
 
 class PageFactory(
     sectionController: SectionController,
     productController: ProductController,
+    groupController: GroupController,
 ) {
 
-    private val addSectionCase: AddSectionCase = AddSectionCase(sectionController)
+    private val createSectionCase = CreateSectionCase(sectionController)
     private val createProductCase = CreateProductCase(productController)
+    private val createGroupCase = CreateGroupCase(groupController)
 
     fun create(page: Pages): UIContainer {
-        if (page == Pages.MAIN) {
-            return UIContainer(
-                listOf(
-                    addSectionCase,
-                    createProductCase
-                )
-            )
-        }
         return UIContainer(
             listOf(
-                addSectionCase,
-                createProductCase
+                createSectionCase,
+                createProductCase,
+                createGroupCase,
             )
         )
     }

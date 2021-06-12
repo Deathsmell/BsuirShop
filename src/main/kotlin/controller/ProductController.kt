@@ -4,7 +4,7 @@ import model.Product
 import service.ProductService
 import util.InputUtil
 
-class ProductController(val productService: ProductService) {
+class ProductController(private val productService: ProductService) {
 
     fun createNewProduct(): Product {
         val productName = getProductName()
