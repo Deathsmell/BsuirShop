@@ -2,35 +2,20 @@ package controller
 
 import model.Product
 import service.ProductService
-import util.InputUtil
+import util.ProductUtil
 
 class ProductController(private val productService: ProductService) {
 
     fun createNewProduct(): Product {
-        val productName = getProductName()
-        val productPrice = getProductPrice()
+        val productName = ProductUtil.getProductName()
+        val productPrice = ProductUtil.getProductPrice()
         return productService.createProduct(productName, productPrice)
     }
 
     fun createNewProductWithDescription(): Product {
-        val productName = getProductName()
-        val productDescription = getProductDescription()
-        val productPrice = getProductPrice()
+        val productName = ProductUtil.getProductName()
+        val productDescription = ProductUtil.getProductDescription()
+        val productPrice = ProductUtil.getProductPrice()
         return productService.createProduct(productName, productPrice, productDescription)
-    }
-
-    private fun getProductName(): String {
-        return InputUtil.getString("Enter name: ")
-    }
-
-    private fun getProductDescription(): String {
-        return InputUtil.getString("Enter description: ")
-    }
-
-    private fun getProductPrice(): Float {
-        return InputUtil.getFloat(
-            "Enter price: ",
-            "Illegal price value. You need to enter number value. Please try again!"
-        )
     }
 }

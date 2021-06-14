@@ -6,7 +6,7 @@ import interfaces.UICase
 class CreateGroupCase(private val groupController: GroupController) : UICase {
     override val action: String = "Create group"
 
-    override fun run() {
+    override fun render() {
         groupController.createGroup()
     }
 }

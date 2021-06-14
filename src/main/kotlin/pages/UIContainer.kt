@@ -15,7 +15,7 @@ class UIContainer(private val actions: List<UICase>) {
                 println("Variant value must be biggest than 0 and lowest than ${actions.size}")
             }
         } while (!isValidVariant)
-        actions[variant].run()
+        actions[variant].render()
     }
 
     private fun renderActions() {

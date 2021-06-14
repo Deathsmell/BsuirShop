@@ -5,4 +5,5 @@ enum class Pages {
     SECTION,
     PRODUCT,
     GROUP,
+    GET_SECTION,
 }

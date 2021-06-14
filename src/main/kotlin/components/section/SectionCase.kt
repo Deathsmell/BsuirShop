@@ -7,7 +7,7 @@ import pages.Pages
 class SectionCase(private val pageFactory: PageFactory) : UICase {
     override val action: String = "Sections actions"
 
-    override fun run() {
+    override fun render() {
         pageFactory.create(Pages.SECTION)
     }
 }

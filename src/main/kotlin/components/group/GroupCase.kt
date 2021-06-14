@@ -7,7 +7,7 @@ import pages.Pages
 class GroupCase(private val pageFactory: PageFactory) : UICase {
     override val action: String = "Group actions"
 
-    override fun run() {
+    override fun render() {
         pageFactory.create(Pages.GROUP)
     }
 }

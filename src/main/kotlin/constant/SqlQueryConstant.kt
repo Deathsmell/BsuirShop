@@ -2,7 +2,7 @@ package constant
 
 class SqlQueryConstant {
     companion object {
-        val INSERT = "INSERT INTO"
-        val VALUES = "VALUES"
+        const val INSERT = "INSERT INTO"
+        const val SELECT_ALL = "SELECT * FROM"
     }
 }
