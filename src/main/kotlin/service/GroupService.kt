@@ -1,18 +1,35 @@
 package service
 
-import interfaces.EntityQueryWrapper
 import model.Group
+import model.Product
+import model.Section
+import repository.GroupRepository
+import repository.ProductRepository
 import sql.GroupEntityQueryWrapper
+import sql.entity.GroupMap
+import sql.entity.ProductMap
+import java.util.*
 
 class GroupService(
-    private val databaseService: DatabaseService
+    private val groupRepository: GroupRepository,
+    private val productRepository: ProductRepository
 ) {
-    private val queryWrapper: EntityQueryWrapper<Group> = GroupEntityQueryWrapper()
-
     fun createGroup(name: String): Group {
         val group = Group(name)
-        val query = queryWrapper.insert(group)
-        databaseService.executeUpdate(query)
+        groupRepository.insertGroup(group)
         return group
+    }
+
+    fun getAllGroup(): List<Group> {
+        val result = groupRepository.getAll()
+        result.forEach {
+            val products = productRepository.getProductByGroupId(it.id)
+            it.products.addAll(products)
+        }
+        return result
+    }
+
+    fun addProduct(group: Group, product: Product): Boolean {
+        return groupRepository.addProduct(group.id, product.id)
     }
 }

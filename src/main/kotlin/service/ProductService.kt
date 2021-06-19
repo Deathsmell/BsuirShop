@@ -11,8 +11,8 @@ import java.util.*
 class ProductService(
     private val productRepository: ProductRepository
 ){
-    fun createProduct(name: String, price: Float, description: String? = ""): Product {
-        return productRepository.createProduct(name, price, description)
+    fun createProduct(name: String, price: Float): Product {
+        return productRepository.createProduct(name, price)
     }
 
 

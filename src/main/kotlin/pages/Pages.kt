@@ -7,4 +7,5 @@ enum class Pages {
     GROUP,
     GET_SECTION,
     GET_PRODUCT,
+    GET_GROUPS,
 }

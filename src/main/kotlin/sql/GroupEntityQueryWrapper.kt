@@ -1,26 +1,33 @@
 package sql
 
-import constant.SqlQueryConstant
 import interfaces.EntityQueryWrapper
 import model.Group
 import java.util.*
 
 class GroupEntityQueryWrapper : EntityQueryWrapper<Group> {
-    private val tableName = "`group`"
+    private val group = "`group`"
 
     override fun insert(entity: Group): String {
-        return "select * from `group` values ($entity);"
+        return "insert into $group value ($entity);"
     }
 
     override fun getById(id: UUID): String {
-        return "select * from `group` where id = '$id'"
+        return "select * from $group where id = '$id'"
     }
 
     override fun getByName(name: String): String {
-        return "select * from `group` where name = '$name'"
+        return "select * from $group where name = '$name'"
     }
 
     override fun getAll(): String {
-        return "select * from `group`"
+        return "select * from $group"
+    }
+
+    fun addProduct(groupId: UUID, productId: UUID): String {
+        return "insert into groups_productions value ('$groupId', '$productId')"
+    }
+
+    fun getProductByGroupId(id: UUID): String {
+        return "select * from product where id = (select product_id from group_products where group_id = '$id'"
     }
 }

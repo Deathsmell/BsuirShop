@@ -13,13 +13,6 @@ class ProductController(private val productService: ProductService) {
         return productService.createProduct(productName, productPrice)
     }
 
-    fun createNewProductWithDescription(): Product {
-        val productName = ProductUtil.getProductName()
-        val productDescription = ProductUtil.getProductDescription()
-        val productPrice = ProductUtil.getProductPrice()
-        return productService.createProduct(productName, productPrice, productDescription)
-    }
-
     fun getAllProduct(): List<Product> {
         return productService.getAllProducts()
     }

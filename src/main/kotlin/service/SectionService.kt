@@ -33,7 +33,7 @@ class SectionService(
     }
 
     fun addProduct(section: Section, product: Product): Boolean {
-        return if (product.section?.id  == section.id) {
+        return if (product.section?.id == section.id) {
             false
         } else {
             sectionRepository.addProduct(section.id, product.id)

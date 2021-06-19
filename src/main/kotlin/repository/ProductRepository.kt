@@ -12,7 +12,7 @@ import java.util.*
 class ProductRepository(private val databaseService: DatabaseService) {
     private val queryWrapper: ProductEntityQueryWrapper = ProductEntityQueryWrapper()
 
-    fun createProduct(name: String, price: Float, description: String?): Product {
+    fun createProduct(name: String, price: Float): Product {
         val product = Product(name, price)
         val query = queryWrapper.insert(product)
         databaseService.executeUpdate(query)
@@ -45,6 +45,12 @@ class ProductRepository(private val databaseService: DatabaseService) {
         return getProductByResultSet(resultSet)
     }
 
+    fun getProductByGroupId(groupId: UUID): List<Product> {
+        val query = queryWrapper.getByGroupId(groupId)
+        val resultSet = databaseService.executeQuery(query)
+        return castProductsByResultSet(resultSet)
+    }
+
     private fun getProductByResultSet(resultSet: ResultSet?): Product? {
         return if (resultSet !== null && resultSet.next()) {
             castProductByResultSet(resultSet)
@@ -66,7 +72,6 @@ class ProductRepository(private val databaseService: DatabaseService) {
         } else {
             null
         }
-
     }
 
     fun getAllProductsWithoutSections(): List<Product> {

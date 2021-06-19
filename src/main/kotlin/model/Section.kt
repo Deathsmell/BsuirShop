@@ -32,7 +32,7 @@ class Section(var name: String) : Entity() {
         }
     }
 
-    constructor(id: UUID, name: String, products: Collection<Product>, created: Date, updated: Date) : this(
+    private constructor(id: UUID, name: String, products: Collection<Product>, created: Date, updated: Date) : this(
         name,
         products
     ) {

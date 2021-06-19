@@ -3,6 +3,7 @@ import controller.ProductController
 import controller.SectionController
 import pages.PageFactory
 import pages.Pages
+import repository.GroupRepository
 import repository.ProductRepository
 import repository.SectionRepository
 import service.*
@@ -16,9 +17,10 @@ fun main() {
 
     val sectionRepository = SectionRepository(databaseService)
     val productRepository = ProductRepository(databaseService)
+    val groupRepository = GroupRepository(databaseService)
     val productService = ProductService(productRepository)
     val sectionService = SectionService(sectionRepository)
-    val groupService = GroupService(databaseService)
+    val groupService = GroupService(groupRepository, productRepository)
     val productController = ProductController(productService)
     val sectionController = SectionController(sectionService, productService)
     val groupController = GroupController(groupService)

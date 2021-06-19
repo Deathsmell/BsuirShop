@@ -24,6 +24,10 @@ class ProductEntityQueryWrapper : EntityQueryWrapper<Product> {
         return "select * from product where name = '$name'"
     }
 
+    fun getByGroupId(id: UUID): String {
+        return "select * from product where id = (select product_id from groups_productions where group_id = '$id')"
+    }
+
     fun getSectionByProductId(id: UUID): String {
         return "select * from section where id = (select section_id from section_products where product_id = '$id')"
     }

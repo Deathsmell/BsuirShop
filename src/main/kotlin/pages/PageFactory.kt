@@ -1,7 +1,10 @@
 package pages
 
+import components.group.AddProductInGroup
 import components.group.CreateGroupCase
+import components.group.GetGroup
 import components.group.GroupCase
+import components.group.get.GetAllGroupCase
 import components.section.CreateSectionCase
 import components.product.CreateProductCase
 import components.product.GetProduct
@@ -39,9 +42,11 @@ class PageFactory(
     private val getProductById = GetProductById(productController)
     private val getProductByName = GetProductByName(productController)
 
-    private val createGroupCase = CreateGroupCase(groupController)
-
     private val groupCase = GroupCase(this)
+    private val getGroupCase = GetGroup(this)
+    private val createGroupCase = CreateGroupCase(groupController)
+    private val getAllGroups = GetAllGroupCase(groupController)
+    private val addProductInGroup = AddProductInGroup(groupController, productController)
 
     fun create(page: Pages): UIContainer {
         return UIContainer(
@@ -52,9 +57,14 @@ class PageFactory(
                 Pages.PRODUCT -> getProductPage()
                 Pages.GET_SECTION -> getSectionGetPage()
                 Pages.GET_PRODUCT -> getProductGetPage()
+                Pages.GET_GROUPS -> getGroupGetPage()
             }
         )
     }
+
+    private fun getGroupGetPage() = listOf(
+        getAllGroups,
+    )
 
     private fun getProductGetPage() = listOf(
         getAllProductCase,
@@ -78,10 +88,13 @@ class PageFactory(
         createProductCase,
         getProductCase,
         addProductInSection,
+        addProductInGroup
     )
 
     private fun getGroupPage() = listOf(
         createGroupCase,
+        getGroupCase,
+        addProductInGroup
     )
 
     private fun getSectionGetPage() = listOf(

@@ -1,5 +1,7 @@
 package controller
 
+import model.Group
+import model.Product
 import service.GroupService
 import util.InputUtil
 
@@ -10,6 +12,14 @@ class GroupController(
     fun createGroup() {
         val groupName = getGroupName()
         groupService.createGroup(groupName)
+    }
+
+    fun getAllGroups(): List<Group> {
+        return groupService.getAllGroup()
+    }
+
+    fun addProduct(group: Group, product: Product): Boolean {
+        return groupService.addProduct(group, product)
     }
 
     private fun getGroupName(): String {
