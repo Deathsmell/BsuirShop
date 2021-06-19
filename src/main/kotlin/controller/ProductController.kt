@@ -24,6 +24,10 @@ class ProductController(private val productService: ProductService) {
         return productService.getAllProducts()
     }
 
+    fun getProductsWithoutSections(): List<Product> {
+        return productService.getAllProductsWithoutSections()
+    }
+
     fun getProductById(): Product? {
         val id = InputUtil.getUUID("Enter product id: ")
         return productService.getProductById(id)

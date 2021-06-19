@@ -22,6 +22,10 @@ class ProductRepository(private val databaseService: DatabaseService) {
     fun getAllProducts(): List<Product> {
         val query = queryWrapper.getAll()
         val resultSet = databaseService.executeQuery(query)
+        return castProductsByResultSet(resultSet)
+    }
+
+    private fun castProductsByResultSet(resultSet: ResultSet?): List<Product> {
         val products = mutableListOf<Product>()
         while (resultSet !== null && resultSet.next()) {
             products.add(castProductByResultSet(resultSet))
@@ -63,5 +67,11 @@ class ProductRepository(private val databaseService: DatabaseService) {
             null
         }
 
+    }
+
+    fun getAllProductsWithoutSections(): List<Product> {
+        val query = queryWrapper.getAllWithoutSections()
+        val resultSet = databaseService.executeQuery(query)
+        return castProductsByResultSet(resultSet)
     }
 }

@@ -26,6 +26,10 @@ class SectionEntityQueryWrapper : EntityQueryWrapper<Section> {
     }
 
     fun getProductBySectionId(id: UUID): String {
-        return "select * from product where id in (select product_id from section_products where id = '$id')"
+        return "select * from product where id in (select product_id from section_products where section_id = '$id')"
+    }
+
+    fun addProduct(sectionId: UUID, productId: UUID): String {
+        return "insert into section_products value ('$sectionId', '$productId')"
     }
 }

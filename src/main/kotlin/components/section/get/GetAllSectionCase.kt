@@ -3,7 +3,7 @@ package components.section.get
 import controller.SectionController
 import interfaces.UICase
 import pages.PageFactory
-import service.Table
+import service.TableRenderer
 
 class GetAllSectionCase(
     private val sectionController: SectionController,
@@ -13,7 +13,7 @@ class GetAllSectionCase(
 
     override fun render() {
         val sections = sectionController.getAllSections()
-        val table = Table()
+        val table = TableRenderer()
         table.addColumn("ID", 38)
         table.addColumn("NAME", 30)
         table.addColumn("PRODUCTS COUNT", 16)

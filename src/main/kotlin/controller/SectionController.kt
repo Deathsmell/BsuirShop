@@ -7,7 +7,6 @@ import service.SectionService
 import util.InputUtil
 import util.ProductUtil
 import util.SectionUtil
-import java.util.*
 
 class SectionController(
     private val sectionService: SectionService,
@@ -60,5 +59,9 @@ class SectionController(
             approvals,
             disagreements,
         )
+    }
+
+    fun addProduct(section: Section, product: Product): Boolean {
+        return sectionService.addProduct(section, product)
     }
 }

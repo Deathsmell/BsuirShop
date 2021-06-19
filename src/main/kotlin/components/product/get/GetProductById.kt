@@ -2,13 +2,13 @@ package components.product.get
 
 import controller.ProductController
 import interfaces.UICase
-import service.Table
+import service.TableRenderer
 
 class GetProductById(private val productController: ProductController) : UICase {
     override val action: String = "Get product by id"
     override fun render() {
         val product = productController.getProductById()
-        val table = Table()
+        val table = TableRenderer()
         table.addColumn("ID", 38)
         table.addColumn("NAME", 30)
         table.addColumn("PRICE", 16)

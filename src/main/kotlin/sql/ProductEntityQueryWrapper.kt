@@ -27,4 +27,8 @@ class ProductEntityQueryWrapper : EntityQueryWrapper<Product> {
     fun getSectionByProductId(id: UUID): String {
         return "select * from section where id = (select section_id from section_products where product_id = '$id')"
     }
+
+    fun getAllWithoutSections(): String {
+        return "select * from product where id not in (select product_id from `section_products`)"
+    }
 }

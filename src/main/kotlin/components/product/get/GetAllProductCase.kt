@@ -2,14 +2,14 @@ package components.product.get
 
 import controller.ProductController
 import interfaces.UICase
-import service.Table
+import service.TableRenderer
 
 class GetAllProductCase(private val productController: ProductController): UICase {
     override val action: String = "Get all products"
 
     override fun render() {
         val products = productController.getAllProduct()
-        val table = Table()
+        val table = TableRenderer()
         table.addColumn("ID", 38)
         table.addColumn("NAME", 30)
         table.addColumn("PRICE", 30)

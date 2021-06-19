@@ -1,7 +1,7 @@
 package service
 
 
-class Table {
+class TableRenderer {
     private val columns: MutableList<Column> = mutableListOf()
     private val rows: MutableList<Array<Any?>> = mutableListOf()
 
@@ -34,12 +34,11 @@ class Table {
     private fun getHeader(): String {
         return "|" + columns.joinToString("|") { it.getHeader() } + "|%n"
     }
-}
 
-class Column(val name: String, val size: Int, val format: String) {
-    fun getHeader(): String {
-        return " ".repeat((size - name.length) / 2) + name + " ".repeat((size - name.length) / 2)
+
+    private class Column(val name: String, val size: Int, val format: String) {
+        fun getHeader(): String {
+            return " ".repeat((size - name.length) / 2) + name + " ".repeat((size - name.length) / 2)
+        }
     }
 }
-
-class Row(var content: Any? = null)

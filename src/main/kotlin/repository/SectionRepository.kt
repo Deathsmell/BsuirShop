@@ -56,6 +56,7 @@ class SectionRepository(
     private fun castSectionByResultSet(resultSet: ResultSet): Section {
         val id = UUID.fromString(resultSet.getString(SectionMap.ID.label))
         val products = getProductsBySectionId(id)
+        println(products.size)
         val section = Section.castSectionByResultSet(resultSet, products)
         products.forEach { it.section = section}
         return section
@@ -71,5 +72,10 @@ class SectionRepository(
             result.add(product)
         }
         return result
+    }
+
+    fun addProduct(sectionId: UUID, productId: UUID) {
+        val query = queryWrapper.addProduct(sectionId, productId)
+        databaseService.executeUpdate(query)
     }
 }
