@@ -6,7 +6,8 @@ class TableRenderer {
     private val rows: MutableList<Array<Any?>> = mutableListOf()
 
     fun addColumn(name: String, size: Int, format: String = "s") {
-        columns.add(Column(name, size, format))
+        val fixedSize = if (size < name.length) name.length else size
+        columns.add(Column(name, fixedSize, format))
     }
 
     fun addContent(contents: Array<Any?>) {

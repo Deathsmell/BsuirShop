@@ -40,4 +40,8 @@ class SectionService(
             true
         }
     }
+
+    fun getAllSectionsWithProducts(): List<Section> {
+        return sectionRepository.getAllSectionsWithProducts()
+    }
 }

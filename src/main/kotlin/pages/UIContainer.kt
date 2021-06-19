@@ -19,8 +19,8 @@ class UIContainer(private val actions: List<UICase>) {
     }
 
     private fun renderActions() {
-        actions.forEachIndexed {
-            index, uiCase -> println("($index) ${uiCase.action}")
+        actions.forEachIndexed { index, uiCase ->
+            println("($index) ${uiCase.action}")
         }
     }
 }

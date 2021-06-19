@@ -35,6 +35,10 @@ class SectionController(
         return sectionService.getAllSections()
     }
 
+    fun getAllSectionsWithProducts(): List<Section> {
+        return sectionService.getAllSectionsWithProducts()
+    }
+
     fun getSectionByName(): List<Section> {
         val sectionName = SectionUtil.getSectionName()
         return sectionService.getSectionByName(sectionName)

@@ -1,7 +1,6 @@
 package sql
 
 import interfaces.EntityQueryWrapper
-import constant.SqlQueryConstant
 import model.Section
 import java.util.*
 
@@ -31,5 +30,9 @@ class SectionEntityQueryWrapper : EntityQueryWrapper<Section> {
 
     fun addProduct(sectionId: UUID, productId: UUID): String {
         return "insert into section_products value ('$sectionId', '$productId')"
+    }
+
+    fun getAllWithProducts(): String {
+        return "select * from section where id in (select section_id from section_products)"
     }
 }

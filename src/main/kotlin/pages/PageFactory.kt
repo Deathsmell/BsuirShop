@@ -5,17 +5,18 @@ import components.group.CreateGroupCase
 import components.group.GetGroup
 import components.group.GroupCase
 import components.group.get.GetAllGroupCase
-import components.section.CreateSectionCase
 import components.product.CreateProductCase
 import components.product.GetProduct
 import components.product.ProductCase
 import components.product.get.GetAllProductCase
 import components.product.get.GetProductById
 import components.product.get.GetProductByName
+import components.product.get.GetProductsBySectionId
 import components.section.AddProductInSection
-import components.section.get.GetAllSectionCase
+import components.section.CreateSectionCase
 import components.section.GetSection
 import components.section.SectionCase
+import components.section.get.GetAllSectionCase
 import components.section.get.GetSectionById
 import components.section.get.GetSectionByName
 import controller.GroupController
@@ -41,6 +42,7 @@ class PageFactory(
     private val getAllProductCase = GetAllProductCase(productController)
     private val getProductById = GetProductById(productController)
     private val getProductByName = GetProductByName(productController)
+    private val getProductsBySectionId = GetProductsBySectionId(sectionController)
 
     private val groupCase = GroupCase(this)
     private val getGroupCase = GetGroup(this)
@@ -70,6 +72,7 @@ class PageFactory(
         getAllProductCase,
         getProductByName,
         getProductById,
+        getProductsBySectionId,
     )
 
     private fun getMainPage() = listOf(

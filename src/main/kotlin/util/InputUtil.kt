@@ -5,7 +5,8 @@ import java.util.*
 class InputUtil {
     companion object {
 
-        @JvmStatic fun getFloat(message: String, errorMessage: String?): Float {
+        @JvmStatic
+        fun getFloat(message: String, errorMessage: String?): Float {
             var floatValue: Float? = null
             while (floatValue === null) {
                 print(message)
@@ -22,7 +23,8 @@ class InputUtil {
             return floatValue
         }
 
-        @JvmStatic fun getInteger(message: String, errorMessage: String?): Int {
+        @JvmStatic
+        fun getInteger(message: String, errorMessage: String?): Int {
             var integerValue: Int? = null
             while (integerValue === null) {
                 print(message)
@@ -39,7 +41,8 @@ class InputUtil {
             return integerValue
         }
 
-        @JvmStatic fun getString(message: String): String {
+        @JvmStatic
+        fun getString(message: String): String {
             var stringValue: String? = null
             while (stringValue === null) {
                 print(message)
@@ -52,7 +55,8 @@ class InputUtil {
             return stringValue
         }
 
-        @JvmStatic fun getBoolean(
+        @JvmStatic
+        fun getBoolean(
             message: String,
             approvals: Iterable<String>,
             disagreements: Iterable<String>,
@@ -94,6 +98,15 @@ class InputUtil {
                 }
             }
             return id
+        }
+
+        @JvmStatic
+        fun getIndex(message: String, max: Int): Int {
+            var index: Int
+            do {
+                index = getInteger(message, "Illegal value")
+            } while (index < 0 || index >= max)
+            return index
         }
     }
 }

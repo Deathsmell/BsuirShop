@@ -79,4 +79,14 @@ class ProductRepository(private val databaseService: DatabaseService) {
         val resultSet = databaseService.executeQuery(query)
         return castProductsByResultSet(resultSet)
     }
+
+    fun getAllProductsBySectionId(id: UUID): List<Product> {
+        val query = queryWrapper.getAllBySectionId(id)
+        val resultSet = databaseService.executeQuery(query)
+        val result = mutableListOf<Product>()
+        while (resultSet !== null && resultSet.next()) {
+            result.addAll(castProductsByResultSet(resultSet))
+        }
+        return result
+    }
 }

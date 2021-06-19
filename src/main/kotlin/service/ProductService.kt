@@ -1,16 +1,12 @@
 package service
 
-import interfaces.EntityQueryWrapper
-import model.Group
 import model.Product
 import repository.ProductRepository
-import sql.ProductEntityQueryWrapper
-import util.InputUtil
 import java.util.*
 
 class ProductService(
     private val productRepository: ProductRepository
-){
+) {
     fun createProduct(name: String, price: Float): Product {
         return productRepository.createProduct(name, price)
     }
@@ -30,5 +26,9 @@ class ProductService(
 
     fun getAllProductsWithoutSections(): List<Product> {
         return productRepository.getAllProductsWithoutSections()
+    }
+
+    fun getAllProductsBySectionId(id: UUID): List<Product> {
+        return productRepository.getAllProductsBySectionId(id)
     }
 }

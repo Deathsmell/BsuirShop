@@ -56,9 +56,8 @@ class SectionRepository(
     private fun castSectionByResultSet(resultSet: ResultSet): Section {
         val id = UUID.fromString(resultSet.getString(SectionMap.ID.label))
         val products = getProductsBySectionId(id)
-        println(products.size)
         val section = Section.castSectionByResultSet(resultSet, products)
-        products.forEach { it.section = section}
+        products.forEach { it.section = section }
         return section
 
     }
@@ -77,5 +76,15 @@ class SectionRepository(
     fun addProduct(sectionId: UUID, productId: UUID) {
         val query = queryWrapper.addProduct(sectionId, productId)
         databaseService.executeUpdate(query)
+    }
+
+    fun getAllSectionsWithProducts(): List<Section> {
+        val query = queryWrapper.getAllWithProducts()
+        val resultSet = databaseService.executeQuery(query)
+        val result = mutableListOf<Section>()
+        while (resultSet !== null && resultSet.next()) {
+            result.add(castSectionByResultSet(resultSet))
+        }
+        return result
     }
 }

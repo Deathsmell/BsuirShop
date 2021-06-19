@@ -4,9 +4,9 @@ import model.Product
 import service.ProductService
 import util.InputUtil
 import util.ProductUtil
+import java.util.*
 
 class ProductController(private val productService: ProductService) {
-
     fun createNewProduct(): Product {
         val productName = ProductUtil.getProductName()
         val productPrice = ProductUtil.getProductPrice()
@@ -29,5 +29,9 @@ class ProductController(private val productService: ProductService) {
     fun getProductByName(): Product? {
         val name = ProductUtil.getProductName()
         return productService.getProductByName(name)
+    }
+
+    fun getAllProductBySectionGuid(id: UUID): List<Product> {
+        return productService.getAllProductsBySectionId(id)
     }
 }
