@@ -19,4 +19,8 @@ class GroupEntityQueryWrapper : EntityQueryWrapper<Group> {
     override fun getByName(name: String): String {
         return "select * from `group` where name = '$name'"
     }
+
+    override fun getAll(): String {
+        return "select * from `group`"
+    }
 }

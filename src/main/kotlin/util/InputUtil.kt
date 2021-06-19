@@ -1,5 +1,7 @@
 package util
 
+import java.util.*
+
 class InputUtil {
     companion object {
 
@@ -79,6 +81,19 @@ class InputUtil {
 
         private fun isItEqual(value: String): (String) -> Boolean {
             return { t -> t.equals(value, ignoreCase = true) }
+        }
+
+        fun getUUID(message: String): UUID {
+            var id: UUID? = null
+            while (id === null) {
+                print(message)
+                val value = readLine()?.trim()
+                id = if (value !== null) UUID.fromString(value) else {
+                    println("Illegal value. Input value not be empty")
+                    null
+                }
+            }
+            return id
         }
     }
 }

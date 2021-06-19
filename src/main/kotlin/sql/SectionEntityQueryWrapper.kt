@@ -13,7 +13,7 @@ class SectionEntityQueryWrapper : EntityQueryWrapper<Section> {
         return "insert into section values ($entity);"
     }
 
-    fun getAll(): String {
+    override fun getAll(): String {
         return "select * from section;"
     }
 

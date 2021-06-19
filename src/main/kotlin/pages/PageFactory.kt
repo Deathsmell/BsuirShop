@@ -4,7 +4,11 @@ import components.group.CreateGroupCase
 import components.group.GroupCase
 import components.section.CreateSectionCase
 import components.product.CreateProductCase
+import components.product.GetProduct
 import components.product.ProductCase
+import components.product.get.GetAllProductCase
+import components.product.get.GetProductById
+import components.product.get.GetProductByName
 import components.section.get.GetAllSectionCase
 import components.section.GetSection
 import components.section.SectionCase
@@ -19,16 +23,23 @@ class PageFactory(
     productController: ProductController,
     groupController: GroupController,
 ) {
+    private val sectionCase = SectionCase(this)
     private val createSectionCase = CreateSectionCase(sectionController)
     private val getSectionCase = GetSection(this)
     private val getSectionByName = GetSectionByName(sectionController)
     private val getSectionById = GetSectionById(sectionController)
-    private val createProductCase = CreateProductCase(productController)
-    private val createGroupCase = CreateGroupCase(groupController)
-    private val sectionCase = SectionCase(this)
-    private val groupCase = GroupCase(this)
-    private val productCase = ProductCase(this)
     private val getAllSectionCase = GetAllSectionCase(sectionController, this)
+
+    private val productCase = ProductCase(this)
+    private val createProductCase = CreateProductCase(productController)
+    private val getProductCase = GetProduct(this)
+    private val getAllProductCase = GetAllProductCase(productController)
+    private val getProductById = GetProductById(productController)
+    private val getProductByName = GetProductByName(productController)
+
+    private val createGroupCase = CreateGroupCase(groupController)
+
+    private val groupCase = GroupCase(this)
 
     fun create(page: Pages): UIContainer {
         return UIContainer(
@@ -38,9 +49,16 @@ class PageFactory(
                 Pages.GROUP -> getGroupPage()
                 Pages.PRODUCT -> getProductPage()
                 Pages.GET_SECTION -> getSectionGetPage()
+                Pages.GET_PRODUCT -> getProductGetPage()
             }
         )
     }
+
+    private fun getProductGetPage() = listOf(
+        getAllProductCase,
+        getProductByName,
+        getProductById,
+    )
 
     private fun getMainPage() = listOf(
         sectionCase,
@@ -55,6 +73,7 @@ class PageFactory(
 
     private fun getProductPage() = listOf(
         createProductCase,
+        getProductCase,
     )
 
     private fun getGroupPage() = listOf(

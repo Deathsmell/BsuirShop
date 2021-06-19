@@ -1,6 +1,9 @@
 package model
 
+import sql.entity.ProductMap
+import sql.entity.SectionMap
 import util.DateUtil
+import java.sql.ResultSet
 import java.util.*
 
 class Product(val name: String) : Entity() {
@@ -12,6 +15,23 @@ class Product(val name: String) : Entity() {
     companion object {
         fun createBuilder(): ProductBuilder {
             return ProductBuilder()
+        }
+
+        fun castProductByResultSet(resultSet: ResultSet, section: Section?): Product {
+            val id = getIdByResultSet(resultSet)
+            return createBuilder()
+                .setId(id)
+                .setName(resultSet.getString(ProductMap.NAME.label))
+                .setPrice(resultSet.getFloat(ProductMap.PRICE.label))
+                .setCreated(resultSet.getDate(ProductMap.CREATED.label))
+                .setUpdated(resultSet.getDate(ProductMap.UPDATED.label))
+                .setDescription(resultSet.getString(ProductMap.DESCRIPTION.label))
+                .setSection(section)
+                .build()
+        }
+
+        fun getIdByResultSet(resultSet: ResultSet): UUID {
+            return UUID.fromString(resultSet.getString(SectionMap.ID.label))
         }
     }
 
@@ -29,7 +49,7 @@ class Product(val name: String) : Entity() {
         price: Float,
         description: String,
         groups: MutableList<Group>,
-        section: Section,
+        section: Section?,
         updated: Date,
         created: Date
     ) : this(name, price, description) {
@@ -55,7 +75,7 @@ class Product(val name: String) : Entity() {
         private var price: Float = 0F
         private var description: String = ""
         private var groups: MutableList<Group> = mutableListOf()
-        private lateinit var section: Section
+        private var section: Section? = null
         private lateinit var updated: Date
         private lateinit var created: Date
 
@@ -84,7 +104,7 @@ class Product(val name: String) : Entity() {
             return this
         }
 
-        fun setSection(section: Section): ProductBuilder {
+        fun setSection(section: Section?): ProductBuilder {
             this.section = section
             return this
         }

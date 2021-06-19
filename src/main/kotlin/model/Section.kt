@@ -1,6 +1,8 @@
 package model
 
+import sql.entity.SectionMap
 import util.DateUtil
+import java.sql.ResultSet
 import java.util.*
 
 class Section(var name: String) : Entity() {
@@ -9,6 +11,17 @@ class Section(var name: String) : Entity() {
     companion object {
         fun createBuilder(): SectionBuilder {
             return SectionBuilder()
+        }
+
+        fun castSectionByResultSet(resultSet: ResultSet, products: Collection<Product>): Section {
+            val id = UUID.fromString(resultSet.getString(SectionMap.ID.label))
+            return createBuilder()
+                .setId(id)
+                .setName(resultSet.getString(SectionMap.NAME.label))
+                .setProducts(products)
+                .setCreated(resultSet.getDate(SectionMap.CREATED.label))
+                .setUpdated(resultSet.getDate(SectionMap.UPDATED.label))
+                .build()
         }
     }
 
