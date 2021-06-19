@@ -31,7 +31,7 @@ class ProductController(private val productService: ProductService) {
         return productService.getProductByName(name)
     }
 
-    fun getAllProductBySectionGuid(id: UUID): List<Product> {
+    fun getAllProductBySectionId(id: UUID): List<Product> {
         return productService.getAllProductsBySectionId(id)
     }
 }

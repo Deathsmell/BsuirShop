@@ -3,6 +3,7 @@ package repository
 import model.Group
 import service.DatabaseService
 import sql.GroupEntityQueryWrapper
+import java.sql.ResultSet
 import java.util.*
 
 class GroupRepository(
@@ -18,6 +19,10 @@ class GroupRepository(
     fun getAll(): List<Group> {
         val query = queryWrapper.getAll()
         val resultSet = databaseService.executeQuery(query)
+        return castGroupsByResultSet(resultSet)
+    }
+
+    private fun castGroupsByResultSet(resultSet: ResultSet?): List<Group> {
         val result = mutableListOf<Group>()
         while (resultSet !== null && resultSet.next()) {
             result.add(Group.castGroupByResultSet(resultSet, listOf()))
@@ -29,5 +34,11 @@ class GroupRepository(
         val query = queryWrapper.addProduct(groupId, productId)
         val result = databaseService.executeUpdate(query)
         return result !== null
+    }
+
+    fun getAllWithProducts(): List<Group> {
+        val query = queryWrapper.getAllWithProducts()
+        val resultSet = databaseService.executeQuery(query)
+        return castGroupsByResultSet(resultSet)
     }
 }

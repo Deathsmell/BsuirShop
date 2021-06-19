@@ -28,6 +28,10 @@ class GroupEntityQueryWrapper : EntityQueryWrapper<Group> {
     }
 
     fun getProductByGroupId(id: UUID): String {
-        return "select * from product where id = (select product_id from group_products where group_id = '$id'"
+        return "select * from product where id = (select product_id from groups_productions where group_id = '$id'"
+    }
+
+    fun getAllWithProducts(): String {
+        return "select * from $group where id in (select group_id from groups_productions)"
     }
 }

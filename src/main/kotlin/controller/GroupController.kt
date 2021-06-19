@@ -22,6 +22,10 @@ class GroupController(
         return groupService.addProduct(group, product)
     }
 
+    fun getAllGroupWithProducts(): List<Group> {
+        return groupService.getAllGroupWithProducts()
+    }
+
     private fun getGroupName(): String {
         var name: String
         do {

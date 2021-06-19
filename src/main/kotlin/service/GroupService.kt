@@ -22,6 +22,10 @@ class GroupService(
 
     fun getAllGroup(): List<Group> {
         val result = groupRepository.getAll()
+        return addProducts(result)
+    }
+
+    private fun addProducts(result: List<Group>): List<Group> {
         result.forEach {
             val products = productRepository.getProductByGroupId(it.id)
             it.products.addAll(products)
@@ -31,5 +35,10 @@ class GroupService(
 
     fun addProduct(group: Group, product: Product): Boolean {
         return groupRepository.addProduct(group.id, product.id)
+    }
+
+    fun getAllGroupWithProducts(): List<Group> {
+        val result = groupRepository.getAllWithProducts()
+        return addProducts(result)
     }
 }
