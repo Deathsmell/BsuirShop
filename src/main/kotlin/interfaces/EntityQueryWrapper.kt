@@ -7,4 +7,5 @@ interface EntityQueryWrapper<T> {
     fun getById(id: UUID): String
     fun getByName(name: String): String
     fun getAll(): String
+    fun getByDate(start: Date, end: Date): String
 }

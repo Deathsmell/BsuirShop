@@ -1,5 +1,7 @@
 package util
 
+import java.text.ParseException
+import java.text.SimpleDateFormat
 import java.util.*
 
 class InputUtil {
@@ -107,6 +109,19 @@ class InputUtil {
                 index = getInteger(message, "Illegal value")
             } while (index < 0 || index >= max)
             return index
+        }
+
+        @JvmStatic fun getDate(message: String): Date {
+            var date: Date? = null
+            do {
+                val inputDate = getString(message)
+                try {
+                    date = DateUtil.parseToDate(inputDate)
+                } catch ( e: ParseException) {
+                    println("You must enter date like ${DateUtil.PATTERN}")
+                }
+            } while (date == null)
+            return date
         }
     }
 }

@@ -34,4 +34,10 @@ class ProductController(private val productService: ProductService) {
     fun getAllProductBySectionId(id: UUID): List<Product> {
         return productService.getAllProductsBySectionId(id)
     }
+
+    fun getProductsByDate(): List<Product> {
+        val start = InputUtil.getDate("Enter start time: ")
+        val end = InputUtil.getDate("Enter end time: ")
+        return productService.getAllProductsByDate(start, end)
+    }
 }

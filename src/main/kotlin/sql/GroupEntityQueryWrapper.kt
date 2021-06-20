@@ -11,6 +11,10 @@ class GroupEntityQueryWrapper : EntityQueryWrapper<Group> {
         return "insert into $group value ($entity);"
     }
 
+    override fun getByDate(start: Date, end: Date): String {
+        TODO("Not yet implemented")
+    }
+
     override fun getById(id: UUID): String {
         return "select * from $group where id = '$id'"
     }

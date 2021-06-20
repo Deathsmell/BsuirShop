@@ -1,13 +1,16 @@
 package repository
 
+import model.Group
 import model.Product
 import model.Section
 import service.DatabaseService
 import sql.ProductEntityQueryWrapper
+import sql.entity.GroupMap
 import sql.entity.ProductMap
 import sql.entity.SectionMap
 import java.sql.ResultSet
 import java.util.*
+import kotlin.math.log
 
 class ProductRepository(private val databaseService: DatabaseService) {
     private val queryWrapper: ProductEntityQueryWrapper = ProductEntityQueryWrapper()
@@ -88,5 +91,63 @@ class ProductRepository(private val databaseService: DatabaseService) {
             result.addAll(castProductsByResultSet(resultSet))
         }
         return result
+    }
+
+    fun getAllProductByDate(start: Date, end: Date): List<Product> {
+        val query = queryWrapper.getByDate(start, end)
+        val resultSet = databaseService.executeQuery(query)
+        val result = mutableListOf<Product>()
+        while (resultSet !== null && resultSet.next()) {
+            val group = getGroup(resultSet)
+            val section = getSection(resultSet)
+            val product = getProduct(resultSet, if (group !== null) listOf(group) else listOf(), section)
+            result.add(product)
+        }
+        return result
+    }
+
+    private fun getSection(resultSet: ResultSet): Section? {
+        val prefix = "section."
+        val id = resultSet.getString("$prefix${SectionMap.ID.label}")
+        if (id === null) {
+            return null
+        }
+        return Section.createBuilder()
+            .setId(UUID.fromString(id))
+            .setName(resultSet.getString("$prefix${SectionMap.NAME.label}"))
+            .setProducts(listOf())
+            .setCreated(resultSet.getDate("$prefix${SectionMap.CREATED.label}"))
+            .setUpdated(resultSet.getDate("$prefix${SectionMap.UPDATED.label}"))
+            .build()
+    }
+
+    private fun getGroup(resultSet: ResultSet): Group? {
+        val prefix = "gr."
+        val id = resultSet.getString("$prefix${GroupMap.ID.label}")
+        if (id === null) {
+            return null
+        }
+        return Group.createBuilder()
+            .setId(UUID.fromString(id))
+            .setName(resultSet.getString("$prefix${GroupMap.NAME.label}"))
+            .setCreated(resultSet.getDate("$prefix${GroupMap.CREATED.label}"))
+            .setProducts(listOf())
+            .setUpdated(resultSet.getTime("$prefix${GroupMap.UPDATED.label}"))
+            .build()
+    }
+
+    private fun getProduct(resultSet: ResultSet, groups: List<Group>, section: Section?): Product {
+        val prefix = "product."
+        val id = resultSet.getString("$prefix${ProductMap.ID.label}")
+        return Product.createBuilder()
+            .setId(UUID.fromString(id))
+            .setDescription(resultSet.getString("$prefix${ProductMap.DESCRIPTION.label}"))
+            .setName(resultSet.getString("$prefix${ProductMap.NAME.label}"))
+            .setPrice(resultSet.getFloat("$prefix${ProductMap.PRICE.label}"))
+            .setCreated(resultSet.getDate("$prefix${ProductMap.CREATED.label}"))
+            .setUpdated(resultSet.getDate("$prefix${ProductMap.UPDATED.label}"))
+            .setGroups(groups)
+            .setSection(section)
+            .build()
     }
 }

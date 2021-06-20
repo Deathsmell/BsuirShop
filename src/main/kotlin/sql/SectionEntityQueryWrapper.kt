@@ -16,6 +16,10 @@ class SectionEntityQueryWrapper : EntityQueryWrapper<Section> {
         return "select * from section;"
     }
 
+    override fun getByDate(start: Date, end: Date): String {
+        TODO("Not yet implemented")
+    }
+
     override fun getById(id: UUID): String {
         return "select * from section where id = '$id'"
     }

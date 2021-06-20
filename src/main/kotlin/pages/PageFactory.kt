@@ -41,6 +41,7 @@ class PageFactory(
     private val getProductByName = GetProductByName(productController)
     private val getProductsBySectionId = GetProductsBySectionId(sectionController)
     private val getProductsByGroupId = GetProductsByGroupId(groupController)
+    private val getProductByDate = GetProductByDate(productController)
 
     private val groupCase = GroupCase(this)
     private val getGroupCase = GetGroup(this)
@@ -72,6 +73,7 @@ class PageFactory(
         getProductById,
         getProductsBySectionId,
         getProductsByGroupId,
+        getProductByDate,
     )
 
     private fun getMainPage() = listOf(

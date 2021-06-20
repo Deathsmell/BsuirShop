@@ -39,7 +39,7 @@ class Group(var name: String) : Entity() {
     }
 
     override fun toString(): String {
-        return "'$id', '$name', '${DateUtil.getDateTime(created)}', '${DateUtil.getDateTime(updated)}'"
+        return "'$id', '$name', '${DateUtil.getStringDate(created)}', '${DateUtil.getStringDate(updated)}'"
     }
 
     class GroupBuilder {

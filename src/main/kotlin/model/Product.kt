@@ -65,8 +65,8 @@ class Product(val name: String) : Entity() {
                 "'$name', " +
                 "'$price', " +
                 "'$description', " +
-                "'${DateUtil.getDateTime(created)}', " +
-                "'${DateUtil.getDateTime(updated)}'"
+                "'${DateUtil.getStringDate(created)}', " +
+                "'${DateUtil.getStringDate(updated)}'"
     }
 
     class ProductBuilder {
@@ -74,7 +74,7 @@ class Product(val name: String) : Entity() {
         private lateinit var name: String
         private var price: Float = 0F
         private var description: String = ""
-        private var groups: MutableList<Group> = mutableListOf()
+        private val groups: MutableList<Group> = mutableListOf()
         private var section: Section? = null
         private lateinit var updated: Date
         private lateinit var created: Date
@@ -99,8 +99,8 @@ class Product(val name: String) : Entity() {
             return this
         }
 
-        fun setGroups(groups: MutableList<Group>): ProductBuilder {
-            this.groups = groups
+        fun setGroups(groups: List<Group>): ProductBuilder {
+            this.groups.addAll(groups)
             return this
         }
 

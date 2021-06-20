@@ -11,7 +11,6 @@ class ProductService(
         return productRepository.createProduct(name, price)
     }
 
-
     fun getAllProducts(): List<Product> {
         return productRepository.getAllProducts()
     }
@@ -30,5 +29,9 @@ class ProductService(
 
     fun getAllProductsBySectionId(id: UUID): List<Product> {
         return productRepository.getAllProductsBySectionId(id)
+    }
+
+    fun getAllProductsByDate(start: Date, end: Date): List<Product> {
+        return productRepository.getAllProductByDate(start, end)
     }
 }
