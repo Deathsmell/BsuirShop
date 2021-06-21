@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/deathsmell/IdeaProjects/BsuirShop/src/main/kotlin</OriginalElement>
+  <nodes>
+    <node x="7021.854292883214" y="2674.0">util.SectionUtil.Companion</node>
+    <node x="580.4507156762211" y="3019.0">controller.GroupController</node>
+    <node x="3167.020959549881" y="3507.0">components.product.get.GetProductByName</node>
+    <node x="4500.617382342888" y="2662.0">util.ProductUtil.Companion</node>
+    <node x="5267.475" y="4795.0">components.product.GetProduct</node>
+    <node x="7377.179882342887" y="3495.0">components.product.get.GetProductsBySectionId</node>
+    <node x="7086.354292883214" y="2252.0">util.SectionUtil</node>
+    <node x="5645.241191115852" y="1681.5">util.InputUtil</node>
+    <node x="6626.179882342887" y="3495.0">components.section.get.GetAllSectionCase</node>
+    <node x="1215.8500000000004" y="1309.5">sql.entity.GroupMap</node>
+    <node x="846.3416666666672" y="367.0">model.Section</node>
+    <node x="8728.179882342887" y="3507.0">components.section.SectionCase</node>
+    <node x="412.64166666666733" y="2167.0">repository.GroupRepository</node>
+    <node x="3510.020959549881" y="3507.0">components.product.get.GetProductByDate</node>
+    <node x="2845.020959549881" y="3507.0">components.product.get.GetProductById</node>
+    <node x="8232.179882342887" y="3507.0">components.group.GroupCase</node>
+    <node x="2199.8500000000004" y="2589.0">service.ProductService</node>
+    <node x="259.35000000000036" y="1645.0">sql.GroupEntityQueryWrapper</node>
+    <node x="1318.8126262165474" y="3495.0">components.product.get.GetProductsByGroupId</node>
+    <node x="7046.179882342887" y="3507.0">components.section.CreateSectionCase</node>
+    <node x="1627.2936643941694" y="2047.0">repository.ProductRepository</node>
+    <node x="1099.7158313447544" y="208.5">util.DateUtil.Companion</node>
+    <node x="318.12500000000045" y="643.0">model.Product</node>
+    <node x="0.0" y="4974.0">erorr.NoFindEntityException</node>
+    <node x="2299.8126262165474" y="3507.0">components.product.CreateProductCase</node>
+    <node x="806.2158313447544" y="184.0">model.Entity</node>
+    <node x="4644.604292883214" y="1730.0">model.Product.Companion</node>
+    <node x="7994.900601767362" y="3007.5">pages.Pages</node>
+    <node x="569.3500000000004" y="1742.0">model.Group.Companion</node>
+    <node x="6541.604292883214" y="2119.0">repository.SectionRepository</node>
+    <node x="1672.8126262165474" y="3507.0">components.group.CreateGroupCase</node>
+    <node x="7748.179882342887" y="3507.0">components.group.GetGroup</node>
+    <node x="5109.975" y="3963.0">pages.PageFactory</node>
+    <node x="5769.741191115852" y="2168.0">util.InputUtil.Companion</node>
+    <node x="5075.604292883214" y="1742.0">model.Section.Companion</node>
+    <node x="677.3500000000004" y="1309.0">model.Group.GroupBuilder</node>
+    <node x="6569.338101767362" y="2947.0">controller.SectionController</node>
+    <node x="4482.367382342888" y="2252.0">util.ProductUtil</node>
+    <node x="3567.284049009554" y="2995.0">service.TableRenderer</node>
+    <node x="2357.659049009554" y="1285.5">sql.entity.ProductMap</node>
+    <node x="745.4619105403276" y="2601.0">service.GroupService</node>
+    <node x="1469.3500000000004" y="1395.5">constant.SqlQueryConstant.Companion</node>
+    <node x="297.0" y="4974.0">MainKt</node>
+    <node x="1439.8500000000004" y="1053.5">constant.SqlQueryConstant</node>
+    <node x="306.47500000000036" y="1017.0">model.Group</node>
+    <node x="344.6714351006949" y="3459.0">components.group.AddProductInGroup</node>
+    <node x="9038.179882342887" y="3079.5">interfaces.UICase</node>
+    <node x="2562.504768434028" y="2995.0">controller.ProductController</node>
+    <node x="4967.279292883214" y="1309.5">sql.entity.SectionMap</node>
+    <node x="4126.617382342888" y="1693.0">service.DatabaseService</node>
+    <node x="8990.179882342887" y="3519.0">pages.UIContainer</node>
+    <node x="7990.179882342888" y="3507.0">components.section.GetSection</node>
+    <node x="1515.8500000000004" y="1633.0">sql.ProductEntityQueryWrapper</node>
+    <node x="6291.179882342887" y="3507.0">components.section.get.GetSectionByName</node>
+    <node x="4125.367382342888" y="2203.0">service.AuthService</node>
+    <node x="1987.8126262165474" y="3507.0">components.group.get.GetAllGroupCase</node>
+    <node x="6678.1598484387705" y="1633.0">sql.SectionEntityQueryWrapper</node>
+    <node x="8474.179882342887" y="3507.0">components.product.ProductCase</node>
+    <node x="3228.046435100695" y="2637.5">service.TableRenderer.Column</node>
+    <node x="4728.354292883214" y="1273.0">model.Product.ProductBuilder</node>
+    <node x="1099.7158313447544" y="0.0">util.DateUtil</node>
+    <node x="6545.104292883214" y="2589.0">service.SectionService</node>
+    <node x="5978.179882342887" y="3507.0">components.section.get.GetSectionById</node>
+    <node x="3846.020959549881" y="3507.0">components.product.get.GetAllProductCase</node>
+    <node x="1690.8500000000004" y="1333.5">interfaces.EntityQueryWrapper</node>
+    <node x="5244.104292883214" y="1005.0">model.Section.SectionBuilder</node>
+    <node x="4850.784049009554" y="3459.0">components.section.AddProductInSection</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="components.group.get.GetAllGroupCase" target="controller.GroupController" relationship="TO_ONE">
+      <point x="-36.5" y="-67.0" />
+      <point x="2097.3126262165474" y="3428.0" />
+      <point x="1855.3369105403267" y="3428.0" />
+      <point x="1855.3369105403267" y="3348.0" />
+      <point x="809.2007156762211" y="3348.0" />
+      <point x="76.25" y="103.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.group.CreateGroupCase" relationship="CREATE">
+      <point x="-188.08510638297867" y="-379.0" />
+      <point x="5181.889893617022" y="3881.0" />
+      <point x="1746.5626262165474" y="3881.0" />
+      <point x="-73.75" y="67.0" />
+    </edge>
+    <edge source="model.Product.ProductBuilder" target="model.Product" relationship="INNER_CLASS">
+      <point x="15.416666666666515" y="-139.0" />
+      <point x="4836.020959549881" y="943.0" />
+      <point x="792.4250000000011" y="943.0" />
+      <point x="210.80000000000018" y="139.0" />
+    </edge>
+    <edge source="service.SectionService" target="repository.SectionRepository" relationship="TO_ONE">
+      <point x="-49.5" y="-127.0" />
+      <point x="6693.604292883214" y="2538.0" />
+      <point x="6642.354292883214" y="2538.0" />
+      <point x="-100.75" y="163.0" />
+    </edge>
+    <edge source="components.product.CreateProductCase" target="controller.ProductController" relationship="TO_ONE">
+      <point x="0.0" y="-67.0" />
+      <point x="2459.3126262165474" y="3408.0" />
+      <point x="2950.192268434028" y="3408.0" />
+      <point x="2950.192268434028" y="3358.0" />
+      <point x="2840.004768434028" y="3358.0" />
+      <point x="92.5" y="127.0" />
+    </edge>
+    <edge source="util.ProductUtil.Companion" target="util.ProductUtil" relationship="INNER_CLASS">
+      <point x="-57.25" y="-54.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="repository.GroupRepository" target="model.Group.Companion" relationship="DEPENDENCY">
+      <point x="30.91666666666663" y="-115.0" />
+      <point x="629.0583333333338" y="2026.0" />
+      <point x="782.3500000000004" y="2026.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="components.section.get.GetSectionByName" target="controller.SectionController" relationship="TO_ONE">
+      <point x="118.125" y="-67.0" />
+      <point x="6566.804882342887" y="3378.0" />
+      <point x="7283.29524387366" y="3378.0" />
+      <point x="7283.29524387366" y="3318.0" />
+      <point x="6864.838101767362" y="3318.0" />
+      <point x="98.5" y="175.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetProductsBySectionId" relationship="TO_ONE">
+      <point x="99.57446808510667" y="-379.0" />
+      <point x="5469.549468085107" y="3801.0" />
+      <point x="7639.679882342887" y="3801.0" />
+      <point x="87.5" y="79.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="model.Section.Companion" relationship="DEPENDENCY">
+      <point x="188.76923076923094" y="-235.0" />
+      <point x="2020.5628951634003" y="1986.0" />
+      <point x="5318.604292883214" y="1986.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="repository.SectionRepository" target="model.Product.Companion" relationship="DEPENDENCY">
+      <point x="-89.55555555555566" y="-163.0" />
+      <point x="6653.548737327659" y="1996.0" />
+      <point x="4850.104292883214" y="1996.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.SectionCase" relationship="TO_ONE">
+      <point x="243.40425531914934" y="-379.0" />
+      <point x="5613.37925531915" y="3911.0" />
+      <point x="8929.429882342887" y="3911.0" />
+      <point x="86.25" y="67.0" />
+    </edge>
+    <edge source="components.section.SectionCase" target="pages.PageFactory" relationship="TO_ONE">
+      <point x="-86.25" y="67.0" />
+      <point x="8756.929882342887" y="3761.0" />
+      <point x="7940.679882342888" y="3761.0" />
+      <point x="7940.679882342888" y="3941.0" />
+      <point x="5524.868617021277" y="3941.0" />
+      <point x="154.89361702127644" y="-379.0" />
+    </edge>
+    <edge source="components.section.get.GetSectionById" target="service.TableRenderer" relationship="CREATE">
+      <point x="-109.875" y="-67.0" />
+      <point x="6014.804882342887" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="pages.UIContainer" target="interfaces.UICase" relationship="DEPENDENCY">
+      <point x="77.0" y="-55.0" />
+      <point x="9182.679882342887" y="3438.0" />
+      <point x="9152.346549009555" y="3438.0" />
+      <point x="45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="model.Section.Companion" target="model.Product" relationship="DEPENDENCY">
+      <point x="-97.19999999999982" y="-42.0" />
+      <point x="5221.404292883214" y="1582.0" />
+      <point x="5233.604292883214" y="1582.0" />
+      <point x="5233.604292883214" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="components.product.get.GetProductByName" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="121.125" y="-67.0" />
+      <point x="3449.645959549881" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="components.group.get.GetAllGroupCase" target="service.TableRenderer" relationship="CREATE">
+      <point x="36.5" y="-67.0" />
+      <point x="2170.3126262165474" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="controller.SectionController" target="model.Section" relationship="DEPENDENCY">
+      <point x="175.1111111111113" y="-175.0" />
+      <point x="6941.449212878473" y="2925.0" />
+      <point x="7243.854292883214" y="2925.0" />
+      <point x="7243.854292883214" y="611.0" />
+      <point x="5519.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="components.product.get.GetProductsBySectionId" target="model.Section" relationship="DEPENDENCY">
+      <point x="145.83333333333303" y="-79.0" />
+      <point x="7698.013215676221" y="3348.0" />
+      <point x="7863.308333333334" y="3348.0" />
+      <point x="7863.308333333334" y="611.0" />
+      <point x="5519.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="util.InputUtil.Companion" target="util.InputUtil" relationship="INNER_CLASS">
+      <point x="-119.25" y="-114.0" />
+      <point x="5888.991191115852" y="1976.0" />
+      <point x="5883.741191115852" y="1976.0" />
+      <point x="0.0" y="102.5" />
+    </edge>
+    <edge source="repository.ProductRepository" target="service.DatabaseService" relationship="TO_ONE">
+      <point x="125.84615384615381" y="-235.0" />
+      <point x="1957.6398182403232" y="2006.0" />
+      <point x="4219.617382342888" y="2006.0" />
+      <point x="4219.617382342888" y="1976.0" />
+      <point x="4375.617382342888" y="1976.0" />
+      <point x="83.0" y="91.0" />
+    </edge>
+    <edge source="model.Group" target="util.DateUtil.Companion" relationship="DEPENDENCY">
+      <point x="-93.0" y="-91.0" />
+      <point x="399.47500000000036" y="963.0" />
+      <point x="137.50000000000045" y="963.0" />
+      <point x="137.50000000000045" y="337.0" />
+      <point x="1217.2158313447544" y="337.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="repository.SectionRepository" target="model.Product" relationship="DEPENDENCY">
+      <point x="134.33333333333303" y="-163.0" />
+      <point x="6877.437626216548" y="2016.0" />
+      <point x="6986.6598484387705" y="2016.0" />
+      <point x="6986.6598484387705" y="983.0" />
+      <point x="2208.4792928832144" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="components.group.get.GetAllGroupCase" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="109.5" y="-67.0" />
+      <point x="2243.3126262165474" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="controller.SectionController" target="service.ProductService" relationship="TO_ONE">
+      <point x="-131.33333333333303" y="-175.0" />
+      <point x="6635.004768434028" y="2915.0" />
+      <point x="3135.7547684340284" y="2915.0" />
+      <point x="3135.754768434028" y="2875.0" />
+      <point x="2487.8500000000004" y="2875.0" />
+      <point x="96.0" y="127.0" />
+    </edge>
+    <edge source="components.product.get.GetProductsByGroupId" target="model.Group" relationship="DEPENDENCY">
+      <point x="-139.16666666666652" y="-79.0" />
+      <point x="1346.645959549881" y="3358.0" />
+      <point x="44.0" y="3358.0" />
+      <point x="44.0" y="1252.0" />
+      <point x="424.97500000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1242.0" />
+      <point x="368.47500000000036" y="1242.0" />
+      <point x="-124.0" y="91.0" />
+    </edge>
+    <edge source="controller.GroupController" target="util.InputUtil.Companion" relationship="DEPENDENCY">
+      <point x="122.0" y="-103.0" />
+      <point x="854.9507156762211" y="2915.0" />
+      <point x="2189.3500000000004" y="2915.0" />
+      <point x="2189.3500000000004" y="2548.0" />
+      <point x="6008.241191115852" y="2548.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="components.section.CreateSectionCase" target="controller.SectionController" relationship="TO_ONE">
+      <point x="103.66666666666697" y="-67.0" />
+      <point x="7305.346549009555" y="3378.0" />
+      <point x="7283.29524387366" y="3378.0" />
+      <point x="7283.29524387366" y="3318.0" />
+      <point x="6864.838101767362" y="3318.0" />
+      <point x="98.5" y="175.0" />
+    </edge>
+    <edge source="util.DateUtil.Companion" target="util.DateUtil" relationship="INNER_CLASS">
+      <point x="0.0" y="-42.0" />
+      <point x="0.0" y="67.0" />
+    </edge>
+    <edge source="sql.SectionEntityQueryWrapper" target="model.Section" relationship="DEPENDENCY">
+      <point x="74.5" y="-151.0" />
+      <point x="6901.6598484387705" y="1612.0" />
+      <point x="6997.6598484387705" y="1612.0" />
+      <point x="6997.6598484387705" y="611.0" />
+      <point x="5519.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="controller.SectionController" target="util.ProductUtil.Companion" relationship="DEPENDENCY">
+      <point x="-87.55555555555566" y="-175.0" />
+      <point x="6678.782546211805" y="2905.0" />
+      <point x="4615.117382342888" y="2905.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="components.group.GetGroup" target="pages.Pages" relationship="DEPENDENCY">
+      <point x="55.5" y="-67.0" />
+      <point x="7914.679882342887" y="3358.0" />
+      <point x="8092.400601767362" y="3358.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="components.product.get.GetProductByDate" target="controller.ProductController" relationship="TO_ONE">
+      <point x="-39.5" y="-67.0" />
+      <point x="3628.520959549881" y="3408.0" />
+      <point x="2950.192268434028" y="3408.0" />
+      <point x="2950.192268434028" y="3358.0" />
+      <point x="2840.004768434028" y="3358.0" />
+      <point x="92.5" y="127.0" />
+    </edge>
+    <edge source="sql.ProductEntityQueryWrapper" target="interfaces.EntityQueryWrapper" relationship="REALIZATION">
+      <point x="111.75" y="-151.0" />
+      <point x="1776.6000000000004" y="1592.0" />
+      <point x="1821.8500000000004" y="1592.0" />
+      <point x="0.0" y="78.5" />
+    </edge>
+    <edge source="util.SectionUtil.Companion" target="util.SectionUtil" relationship="INNER_CLASS">
+      <point x="46.0" y="-42.0" />
+      <point x="0.0" y="30.0" />
+    </edge>
+    <edge source="components.section.AddProductInSection" target="controller.SectionController" relationship="DEPENDENCY">
+      <point x="154.0" y="-115.0" />
+      <point x="5235.784049009554" y="3388.0" />
+      <point x="6538.125126216548" y="3388.0" />
+      <point x="6538.125126216548" y="3318.0" />
+      <point x="6667.838101767362" y="3318.0" />
+      <point x="-98.5" y="175.0" />
+    </edge>
+    <edge source="components.section.get.GetAllSectionCase" target="controller.SectionController" relationship="DEPENDENCY">
+      <point x="50.0" y="-79.0" />
+      <point x="6876.179882342887" y="3388.0" />
+      <point x="6538.125126216548" y="3388.0" />
+      <point x="6538.125126216548" y="3318.0" />
+      <point x="6667.838101767362" y="3318.0" />
+      <point x="-98.5" y="175.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.group.get.GetAllGroupCase" relationship="TO_ONE">
+      <point x="-165.95744680851112" y="-379.0" />
+      <point x="5204.017553191489" y="3861.0" />
+      <point x="2060.8126262165474" y="3861.0" />
+      <point x="-73.0" y="67.0" />
+    </edge>
+    <edge source="controller.GroupController" target="model.Group" relationship="DEPENDENCY">
+      <point x="-61.0" y="-103.0" />
+      <point x="671.9507156762211" y="2885.0" />
+      <point x="82.25000000000045" y="2885.0" />
+      <point x="82.25000000000045" y="1252.0" />
+      <point x="424.97500000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1242.0" />
+      <point x="368.47500000000036" y="1242.0" />
+      <point x="-124.0" y="91.0" />
+    </edge>
+    <edge source="model.Product.ProductBuilder" target="model.Product" relationship="CREATE">
+      <point x="-15.416666666666515" y="-139.0" />
+      <point x="4805.437626216548" y="1252.0" />
+      <point x="4825.020959549881" y="1252.0" />
+      <point x="4825.020959549881" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="components.section.SectionCase" target="pages.Pages" relationship="DEPENDENCY">
+      <point x="57.5" y="-67.0" />
+      <point x="8900.679882342887" y="3358.0" />
+      <point x="8092.400601767362" y="3358.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="controller.SectionController" target="util.SectionUtil.Companion" relationship="DEPENDENCY">
+      <point x="131.33333333333303" y="-175.0" />
+      <point x="6897.671435100694" y="2915.0" />
+      <point x="7113.854292883214" y="2915.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="controller.ProductController" target="util.ProductUtil.Companion" relationship="DEPENDENCY">
+      <point x="148.0" y="-127.0" />
+      <point x="2895.504768434028" y="2905.0" />
+      <point x="4615.117382342888" y="2905.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="repository.GroupRepository" target="service.DatabaseService" relationship="DEPENDENCY">
+      <point x="92.75" y="-115.0" />
+      <point x="690.8916666666673" y="2016.0" />
+      <point x="4209.617382342888" y="2016.0" />
+      <point x="-83.0" y="91.0" />
+    </edge>
+    <edge source="components.product.get.GetAllProductCase" target="service.TableRenderer" relationship="CREATE">
+      <point x="39.5" y="-67.0" />
+      <point x="4043.520959549881" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="model.Product.Companion" target="model.Product.ProductBuilder" relationship="CREATE">
+      <point x="-34.25" y="-54.0" />
+      <point x="4815.854292883214" y="1582.0" />
+      <point x="4820.854292883214" y="1582.0" />
+      <point x="0.0" y="139.0" />
+    </edge>
+    <edge source="components.product.get.GetProductsBySectionId" target="service.TableRenderer" relationship="CREATE">
+      <point x="-145.83333333333303" y="-79.0" />
+      <point x="7406.346549009555" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="model.Section" relationship="DEPENDENCY">
+      <point x="-94.38461538461524" y="-235.0" />
+      <point x="1737.409049009554" y="1976.0" />
+      <point x="1429.3500000000004" y="1976.0" />
+      <point x="1429.3500000000004" y="973.0" />
+      <point x="2045.229292883214" y="973.0" />
+      <point x="2045.229292883214" y="611.0" />
+      <point x="5519.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="components.group.AddProductInGroup" target="controller.GroupController" relationship="TO_ONE">
+      <point x="0.0" y="-115.0" />
+      <point x="567.6714351006949" y="3428.0" />
+      <point x="1855.3369105403267" y="3428.0" />
+      <point x="1855.3369105403267" y="3348.0" />
+      <point x="809.2007156762211" y="3348.0" />
+      <point x="76.25" y="103.0" />
+    </edge>
+    <edge source="components.product.get.GetProductById" target="controller.ProductController" relationship="TO_ONE">
+      <point x="-37.75" y="-67.0" />
+      <point x="2958.270959549881" y="3408.0" />
+      <point x="2950.192268434028" y="3408.0" />
+      <point x="2950.192268434028" y="3358.0" />
+      <point x="2840.004768434028" y="3358.0" />
+      <point x="92.5" y="127.0" />
+    </edge>
+    <edge source="sql.ProductEntityQueryWrapper" target="util.DateUtil.Companion" relationship="DEPENDENCY">
+      <point x="-37.25" y="-151.0" />
+      <point x="1627.6000000000004" y="1582.0" />
+      <point x="1659.3500000000004" y="1582.0" />
+      <point x="1659.3500000000004" y="337.0" />
+      <point x="1217.2158313447544" y="337.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="components.group.CreateGroupCase" target="controller.GroupController" relationship="DEPENDENCY">
+      <point x="-98.33333333333348" y="-67.0" />
+      <point x="1721.979292883214" y="3438.0" />
+      <point x="656.7007156762211" y="3438.0" />
+      <point x="-76.25" y="103.0" />
+    </edge>
+    <edge source="sql.GroupEntityQueryWrapper" target="interfaces.EntityQueryWrapper" relationship="REALIZATION">
+      <point x="72.5" y="-139.0" />
+      <point x="476.85000000000036" y="1592.0" />
+      <point x="1821.8500000000004" y="1592.0" />
+      <point x="0.0" y="78.5" />
+    </edge>
+    <edge source="model.Group.GroupBuilder" target="model.Group" relationship="INNER_CLASS">
+      <point x="-26.25" y="-103.0" />
+      <point x="756.1000000000004" y="1242.0" />
+      <point x="477.47500000000036" y="1242.0" />
+      <point x="477.47500000000036" y="1232.0" />
+      <point x="492.47500000000036" y="1232.0" />
+      <point x="0.0" y="91.0" />
+    </edge>
+    <edge source="model.Group.Companion" target="model.Product" relationship="DEPENDENCY">
+      <point x="85.19999999999982" y="-42.0" />
+      <point x="867.5500000000002" y="1572.0" />
+      <point x="1145.8500000000004" y="1572.0" />
+      <point x="1145.8500000000004" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="service.GroupService" target="repository.GroupRepository" relationship="DEPENDENCY">
+      <point x="-33.91666666666674" y="-115.0" />
+      <point x="915.0452438736611" y="2548.0" />
+      <point x="505.39166666666733" y="2548.0" />
+      <point x="-92.75" y="115.0" />
+    </edge>
+    <edge source="model.Section.SectionBuilder" target="model.Product" relationship="TO_MANY">
+      <point x="-95.25" y="-103.0" />
+      <point x="5275.854292883214" y="963.0" />
+      <point x="535.2317823351996" y="963.0" />
+      <point x="535.2317823351996" y="953.0" />
+      <point x="581.6250000000005" y="953.0" />
+      <point x="0.0" y="139.0" />
+    </edge>
+    <edge source="pages.UIContainer" target="interfaces.UICase" relationship="TO_MANY">
+      <point x="0.0" y="-55.0" />
+      <point x="0.0" y="42.5" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetProductByName" relationship="TO_ONE">
+      <point x="-88.5106382978729" y="-379.0" />
+      <point x="5281.4643617021275" y="3791.0" />
+      <point x="3409.270959549881" y="3791.0" />
+      <point x="80.75" y="67.0" />
+    </edge>
+    <edge source="components.group.AddProductInGroup" target="controller.GroupController" relationship="DEPENDENCY">
+      <point x="-49.55555555555566" y="-115.0" />
+      <point x="518.1158795451393" y="3438.0" />
+      <point x="656.7007156762211" y="3438.0" />
+      <point x="-76.25" y="103.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.ProductCase" relationship="CREATE">
+      <point x="210.21276595744712" y="-379.0" />
+      <point x="5580.1877659574475" y="3881.0" />
+      <point x="8620.429882342887" y="3881.0" />
+      <point x="29.25" y="67.0" />
+    </edge>
+    <edge source="components.product.GetProduct" target="pages.PageFactory" relationship="DEPENDENCY">
+      <point x="18.83333333333394" y="-67.0" />
+      <point x="5399.308333333334" y="4753.0" />
+      <point x="5564.975" y="4753.0" />
+      <point x="195.0" y="379.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.group.GetGroup" relationship="TO_ONE">
+      <point x="132.7659574468089" y="-379.0" />
+      <point x="5502.740957446809" y="3831.0" />
+      <point x="7831.429882342887" y="3831.0" />
+      <point x="-27.75" y="67.0" />
+    </edge>
+    <edge source="components.group.GetGroup" target="pages.PageFactory" relationship="TO_ONE">
+      <point x="27.75" y="67.0" />
+      <point x="7886.929882342887" y="3761.0" />
+      <point x="7940.679882342888" y="3761.0" />
+      <point x="7940.679882342888" y="3941.0" />
+      <point x="5524.868617021277" y="3941.0" />
+      <point x="154.89361702127644" y="-379.0" />
+    </edge>
+    <edge source="components.section.SectionCase" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="-57.5" y="-67.0" />
+      <point x="8785.679882342887" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="model.Product.Companion" target="model.Product" relationship="INNER_CLASS">
+      <point x="34.25" y="-54.0" />
+      <point x="4884.354292883214" y="1582.0" />
+      <point x="4923.854292883214" y="1582.0" />
+      <point x="4923.854292883214" y="973.0" />
+      <point x="4836.020959549881" y="973.0" />
+      <point x="4836.020959549881" y="943.0" />
+      <point x="792.4250000000011" y="943.0" />
+      <point x="210.80000000000018" y="139.0" />
+    </edge>
+    <edge source="model.Group.GroupBuilder" target="model.Product" relationship="TO_MANY">
+      <point x="26.25" y="-103.0" />
+      <point x="808.6000000000004" y="963.0" />
+      <point x="535.2317823351996" y="963.0" />
+      <point x="535.2317823351996" y="953.0" />
+      <point x="581.6250000000005" y="953.0" />
+      <point x="0.0" y="139.0" />
+    </edge>
+    <edge source="components.product.get.GetProductsByGroupId" target="controller.GroupController" relationship="DEPENDENCY">
+      <point x="-83.5" y="-79.0" />
+      <point x="1402.3126262165474" y="3438.0" />
+      <point x="656.7007156762211" y="3438.0" />
+      <point x="-76.25" y="103.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetAllProductCase" relationship="TO_ONE">
+      <point x="-55.31914893617068" y="-379.0" />
+      <point x="5314.65585106383" y="3761.0" />
+      <point x="3925.020959549881" y="3761.0" />
+      <point x="-79.0" y="67.0" />
+    </edge>
+    <edge source="service.GroupService" target="repository.ProductRepository" relationship="DEPENDENCY">
+      <point x="169.58333333333326" y="-115.0" />
+      <point x="1118.545243873661" y="2558.0" />
+      <point x="1739.5436643941694" y="2558.0" />
+      <point x="1739.5436643941694" y="2548.0" />
+      <point x="1934.0436643941694" y="2548.0" />
+      <point x="102.25" y="235.0" />
+    </edge>
+    <edge source="model.Section.Companion" target="model.Section" relationship="DEPENDENCY">
+      <point x="194.39999999999964" y="-42.0" />
+      <point x="5513.004292883214" y="1582.0" />
+      <point x="5519.604292883214" y="1582.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="controller.SectionController" target="model.Product" relationship="DEPENDENCY">
+      <point x="0.0" y="-175.0" />
+      <point x="6766.338101767362" y="2875.0" />
+      <point x="6501.104292883214" y="2875.0" />
+      <point x="6501.104292883214" y="983.0" />
+      <point x="2208.4792928832144" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="service.ProductService" target="repository.ProductRepository" relationship="TO_ONE">
+      <point x="-128.0" y="-127.0" />
+      <point x="2263.8500000000004" y="2568.0" />
+      <point x="1729.5436643941694" y="2568.0" />
+      <point x="-102.25" y="235.0" />
+    </edge>
+    <edge source="components.product.get.GetProductByName" target="service.TableRenderer" relationship="CREATE">
+      <point x="40.375" y="-67.0" />
+      <point x="3368.895959549881" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="repository.SectionRepository" target="sql.entity.SectionMap" relationship="DEPENDENCY">
+      <point x="0.0" y="-163.0" />
+      <point x="6743.104292883214" y="1976.0" />
+      <point x="6667.6598484387705" y="1976.0" />
+      <point x="6667.6598484387705" y="1602.0" />
+      <point x="5072.779292883214" y="1602.0" />
+      <point x="0.0" y="102.5" />
+    </edge>
+    <edge source="service.AuthService" target="service.DatabaseService" relationship="TO_ONE">
+      <point x="84.25" y="-79.0" />
+      <point x="4378.117382342888" y="2006.0" />
+      <point x="4219.617382342888" y="2006.0" />
+      <point x="4219.617382342888" y="1976.0" />
+      <point x="4375.617382342888" y="1976.0" />
+      <point x="83.0" y="91.0" />
+    </edge>
+    <edge source="controller.SectionController" target="util.InputUtil.Companion" relationship="DEPENDENCY">
+      <point x="-43.777777777777374" y="-175.0" />
+      <point x="6722.5603239895845" y="2885.0" />
+      <point x="6479.104292883214" y="2885.0" />
+      <point x="6479.104292883214" y="2548.0" />
+      <point x="6008.241191115852" y="2548.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="sql.ProductEntityQueryWrapper" target="constant.SqlQueryConstant.Companion" relationship="DEPENDENCY">
+      <point x="-111.75" y="-151.0" />
+      <point x="1553.1000000000004" y="1582.0" />
+      <point x="1544.3500000000004" y="1582.0" />
+      <point x="0.0" y="16.5" />
+    </edge>
+    <edge source="components.product.get.GetAllProductCase" target="controller.ProductController" relationship="TO_ONE">
+      <point x="-39.5" y="-67.0" />
+      <point x="3964.520959549881" y="3408.0" />
+      <point x="2950.192268434028" y="3408.0" />
+      <point x="2950.192268434028" y="3358.0" />
+      <point x="2840.004768434028" y="3358.0" />
+      <point x="92.5" y="127.0" />
+    </edge>
+    <edge source="model.Product.ProductBuilder" target="model.Section" relationship="TO_ONE">
+      <point x="46.25" y="-139.0" />
+      <point x="4867.104292883214" y="1252.0" />
+      <point x="4847.020959549881" y="1252.0" />
+      <point x="4847.020959549881" y="621.0" />
+      <point x="1053.3984490018665" y="621.0" />
+      <point x="1053.3984490018665" y="601.0" />
+      <point x="1058.3416666666672" y="601.0" />
+      <point x="0.0" y="91.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="sql.entity.SectionMap" relationship="DEPENDENCY">
+      <point x="62.92307692307713" y="-235.0" />
+      <point x="1894.7167413172465" y="1976.0" />
+      <point x="2076.3500000000004" y="1976.0" />
+      <point x="2076.3500000000004" y="1602.0" />
+      <point x="5072.779292883214" y="1602.0" />
+      <point x="0.0" y="102.5" />
+    </edge>
+    <edge source="model.Group.GroupBuilder" target="model.Product" relationship="DEPENDENCY">
+      <point x="78.75" y="-103.0" />
+      <point x="861.1000000000004" y="1242.0" />
+      <point x="1106.7250000000004" y="1242.0" />
+      <point x="1106.7250000000004" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="model.Section.SectionBuilder" target="model.Section" relationship="CREATE">
+      <point x="95.25" y="-103.0" />
+      <point x="5466.354292883214" y="963.0" />
+      <point x="5387.604292883214" y="963.0" />
+      <point x="5387.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="model.Product.Companion" target="model.Product" relationship="DEPENDENCY">
+      <point x="-102.75" y="-54.0" />
+      <point x="4747.354292883214" y="1582.0" />
+      <point x="4717.854292883214" y="1582.0" />
+      <point x="4717.854292883214" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="service.GroupService" target="repository.GroupRepository" relationship="TO_ONE">
+      <point x="33.91666666666663" y="-115.0" />
+      <point x="982.8785772069941" y="2538.0" />
+      <point x="690.8916666666673" y="2538.0" />
+      <point x="92.75" y="115.0" />
+    </edge>
+    <edge source="components.section.GetSection" target="pages.PageFactory" relationship="DEPENDENCY">
+      <point x="83.25" y="67.0" />
+      <point x="8184.429882342888" y="3751.0" />
+      <point x="8277.500126216548" y="3751.0" />
+      <point x="8277.500126216548" y="3931.0" />
+      <point x="5546.996276595745" y="3931.0" />
+      <point x="177.0212765957449" y="-379.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="sql.entity.ProductMap" relationship="DEPENDENCY">
+      <point x="31.461538461538566" y="-235.0" />
+      <point x="1863.255202855708" y="1966.0" />
+      <point x="2065.3500000000004" y="1966.0" />
+      <point x="2065.3500000000004" y="1612.0" />
+      <point x="2473.159049009554" y="1612.0" />
+      <point x="0.0" y="126.5" />
+    </edge>
+    <edge source="components.group.AddProductInGroup" target="model.Group" relationship="DEPENDENCY">
+      <point x="-148.66666666666652" y="-115.0" />
+      <point x="419.0047684340284" y="3398.0" />
+      <point x="22.0" y="3398.0" />
+      <point x="22.0" y="1252.0" />
+      <point x="424.97500000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1242.0" />
+      <point x="368.47500000000036" y="1242.0" />
+      <point x="-124.0" y="91.0" />
+    </edge>
+    <edge source="components.section.get.GetAllSectionCase" target="pages.PageFactory" relationship="TO_ONE">
+      <point x="50.0" y="79.0" />
+      <point x="6876.179882342887" y="3761.0" />
+      <point x="7940.679882342888" y="3761.0" />
+      <point x="7940.679882342888" y="3941.0" />
+      <point x="5524.868617021277" y="3941.0" />
+      <point x="154.89361702127644" y="-379.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.get.GetAllSectionCase" relationship="TO_ONE">
+      <point x="44.255319148935996" y="-379.0" />
+      <point x="5414.230319148936" y="3751.0" />
+      <point x="6676.179882342887" y="3751.0" />
+      <point x="-150.0" y="79.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.group.CreateGroupCase" relationship="TO_ONE">
+      <point x="-177.0212765957449" y="-379.0" />
+      <point x="5192.9537234042555" y="3871.0" />
+      <point x="1894.0626262165474" y="3871.0" />
+      <point x="73.75" y="67.0" />
+    </edge>
+    <edge source="components.product.get.GetProductByDate" target="service.TableRenderer" relationship="CREATE">
+      <point x="39.5" y="-67.0" />
+      <point x="3707.520959549881" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="pages.UIContainer" target="util.InputUtil.Companion" relationship="DEPENDENCY">
+      <point x="-77.0" y="-55.0" />
+      <point x="9028.679882342887" y="3348.0" />
+      <point x="8461.400601767362" y="3348.0" />
+      <point x="8461.400601767362" y="2548.0" />
+      <point x="6008.241191115852" y="2548.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="components.section.AddProductInSection" target="controller.ProductController" relationship="DEPENDENCY">
+      <point x="-205.33333333333394" y="-115.0" />
+      <point x="4876.45071567622" y="3418.0" />
+      <point x="2742.504768434028" y="3418.0" />
+      <point x="2742.504768434028" y="3358.0" />
+      <point x="2655.004768434028" y="3358.0" />
+      <point x="-92.5" y="127.0" />
+    </edge>
+    <edge source="model.Section.Companion" target="model.Section" relationship="INNER_CLASS">
+      <point x="97.19999999999982" y="-42.0" />
+      <point x="5415.804292883214" y="1572.0" />
+      <point x="5508.604292883214" y="1572.0" />
+      <point x="5508.604292883214" y="621.0" />
+      <point x="5403.229292883214" y="621.0" />
+      <point x="5403.229292883214" y="601.0" />
+      <point x="1143.1416666666673" y="601.0" />
+      <point x="84.80000000000018" y="91.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.GetProduct" relationship="TO_ONE">
+      <point x="-195.0" y="379.0" />
+      <point x="5174.975" y="4773.0" />
+      <point x="5286.308333333334" y="4773.0" />
+      <point x="-94.16666666666606" y="-67.0" />
+    </edge>
+    <edge source="components.product.GetProduct" target="pages.PageFactory" relationship="TO_ONE">
+      <point x="-56.5" y="-67.0" />
+      <point x="5323.975" y="4773.0" />
+      <point x="5304.975" y="4773.0" />
+      <point x="-65.0" y="379.0" />
+    </edge>
+    <edge source="components.group.CreateGroupCase" target="controller.GroupController" relationship="TO_ONE">
+      <point x="0.0" y="-67.0" />
+      <point x="1820.3126262165474" y="3428.0" />
+      <point x="1855.3369105403267" y="3428.0" />
+      <point x="1855.3369105403267" y="3348.0" />
+      <point x="809.2007156762211" y="3348.0" />
+      <point x="76.25" y="103.0" />
+    </edge>
+    <edge source="model.Group" target="model.Product" relationship="DEPENDENCY">
+      <point x="155.0" y="-91.0" />
+      <point x="647.4750000000004" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="model.Product" target="model.Group" relationship="DEPENDENCY">
+      <point x="-105.40000000000009" y="139.0" />
+      <point x="476.22500000000036" y="973.0" />
+      <point x="523.4750000000004" y="973.0" />
+      <point x="31.0" y="-91.0" />
+    </edge>
+    <edge source="components.section.get.GetSectionById" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="-36.625" y="-67.0" />
+      <point x="6088.054882342887" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="components.group.AddProductInGroup" target="service.TableRenderer" relationship="CREATE">
+      <point x="148.66666666666674" y="-115.0" />
+      <point x="716.3381017673619" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="components.product.ProductCase" target="pages.PageFactory" relationship="DEPENDENCY">
+      <point x="-29.25" y="67.0" />
+      <point x="8561.929882342887" y="3751.0" />
+      <point x="8277.500126216548" y="3751.0" />
+      <point x="8277.500126216548" y="3931.0" />
+      <point x="5546.996276595745" y="3931.0" />
+      <point x="177.0212765957449" y="-379.0" />
+    </edge>
+    <edge source="sql.GroupEntityQueryWrapper" target="model.Group" relationship="DEPENDENCY">
+      <point x="-72.5" y="-139.0" />
+      <point x="331.85000000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1242.0" />
+      <point x="368.47500000000036" y="1242.0" />
+      <point x="-124.0" y="91.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.GetProduct" relationship="CREATE">
+      <point x="65.0" y="379.0" />
+      <point x="5434.975" y="4743.0" />
+      <point x="5361.641666666666" y="4743.0" />
+      <point x="-18.83333333333394" y="-67.0" />
+    </edge>
+    <edge source="components.section.AddProductInSection" target="model.Section" relationship="DEPENDENCY">
+      <point x="51.33333333333303" y="-115.0" />
+      <point x="5133.117382342887" y="3358.0" />
+      <point x="6041.241191115852" y="3358.0" />
+      <point x="6041.241191115852" y="2895.0" />
+      <point x="6490.104292883214" y="2895.0" />
+      <point x="6490.104292883214" y="611.0" />
+      <point x="5519.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="model.Product" target="model.Section" relationship="TO_ONE">
+      <point x="131.75" y="-139.0" />
+      <point x="713.3750000000005" y="621.0" />
+      <point x="1053.3984490018665" y="621.0" />
+      <point x="1053.3984490018665" y="601.0" />
+      <point x="1058.3416666666672" y="601.0" />
+      <point x="0.0" y="91.0" />
+    </edge>
+    <edge source="service.TableRenderer" target="service.TableRenderer.Column" relationship="TO_MANY">
+      <point x="0.0" y="-127.0" />
+      <point x="3710.784049009554" y="2885.0" />
+      <point x="3344.046435100695" y="2885.0" />
+      <point x="0.0" y="78.5" />
+    </edge>
+    <edge source="model.Group.Companion" target="model.Group" relationship="DEPENDENCY">
+      <point x="-170.39999999999964" y="-42.0" />
+      <point x="611.9500000000007" y="1582.0" />
+      <point x="466.47500000000036" y="1582.0" />
+      <point x="466.47500000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1242.0" />
+      <point x="368.47500000000036" y="1242.0" />
+      <point x="-124.0" y="91.0" />
+    </edge>
+    <edge source="components.group.GroupCase" target="pages.PageFactory" relationship="TO_ONE">
+      <point x="-83.25" y="67.0" />
+      <point x="8259.929882342887" y="3761.0" />
+      <point x="7940.679882342888" y="3761.0" />
+      <point x="7940.679882342888" y="3941.0" />
+      <point x="5524.868617021277" y="3941.0" />
+      <point x="154.89361702127644" y="-379.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.group.GroupCase" relationship="TO_ONE">
+      <point x="188.08510638297867" y="-379.0" />
+      <point x="5558.060106382979" y="3861.0" />
+      <point x="8370.929882342887" y="3861.0" />
+      <point x="27.75" y="67.0" />
+    </edge>
+    <edge source="components.section.get.GetSectionByName" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="-39.375" y="-67.0" />
+      <point x="6409.304882342887" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="repository.SectionRepository" target="sql.SectionEntityQueryWrapper" relationship="CREATE">
+      <point x="44.777777777777374" y="-163.0" />
+      <point x="6787.882070660991" y="2026.0" />
+      <point x="6752.6598484387705" y="2026.0" />
+      <point x="-74.5" y="151.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="model.Product.Companion" relationship="DEPENDENCY">
+      <point x="157.30769230769238" y="-235.0" />
+      <point x="1989.1013567018617" y="1996.0" />
+      <point x="4850.104292883214" y="1996.0" />
+      <point x="0.0" y="54.0" />
+    </edge>
+    <edge source="controller.SectionController" target="service.SectionService" relationship="DEPENDENCY">
+      <point x="87.55555555555566" y="-175.0" />
+      <point x="6853.893657322917" y="2925.0" />
+      <point x="6842.104292883214" y="2925.0" />
+      <point x="99.0" y="127.0" />
+    </edge>
+    <edge source="components.product.get.GetAllProductCase" target="controller.ProductController" relationship="DEPENDENCY">
+      <point x="-118.5" y="-67.0" />
+      <point x="3885.520959549881" y="3418.0" />
+      <point x="2742.504768434028" y="3418.0" />
+      <point x="2742.504768434028" y="3358.0" />
+      <point x="2655.004768434028" y="3358.0" />
+      <point x="-92.5" y="127.0" />
+    </edge>
+    <edge source="model.Product.ProductBuilder" target="model.Section" relationship="DEPENDENCY">
+      <point x="77.08333333333348" y="-139.0" />
+      <point x="4897.937626216548" y="1242.0" />
+      <point x="4858.020959549881" y="1242.0" />
+      <point x="4858.020959549881" y="611.0" />
+      <point x="5519.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="model.Group.Companion" relationship="DEPENDENCY">
+      <point x="-188.7692307692305" y="-235.0" />
+      <point x="1643.0244336249389" y="2026.0" />
+      <point x="782.3500000000004" y="2026.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="service.SectionService" target="model.Product" relationship="DEPENDENCY">
+      <point x="-148.5" y="-127.0" />
+      <point x="6594.604292883214" y="2538.0" />
+      <point x="6531.104292883214" y="2538.0" />
+      <point x="6531.104292883214" y="983.0" />
+      <point x="2208.4792928832144" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="model.Section" target="util.DateUtil.Companion" relationship="DEPENDENCY">
+      <point x="106.0" y="-91.0" />
+      <point x="1164.3416666666672" y="337.0" />
+      <point x="1217.2158313447544" y="337.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="service.SectionService" target="repository.SectionRepository" relationship="DEPENDENCY">
+      <point x="49.5" y="-127.0" />
+      <point x="6792.604292883214" y="2538.0" />
+      <point x="6843.854292883214" y="2538.0" />
+      <point x="100.75" y="163.0" />
+    </edge>
+    <edge source="components.product.get.GetProductsBySectionId" target="controller.SectionController" relationship="DEPENDENCY">
+      <point x="-29.16666666666697" y="-79.0" />
+      <point x="7523.013215676221" y="3388.0" />
+      <point x="6538.125126216548" y="3388.0" />
+      <point x="6538.125126216548" y="3318.0" />
+      <point x="6667.838101767362" y="3318.0" />
+      <point x="-98.5" y="175.0" />
+    </edge>
+    <edge source="components.group.GetGroup" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="-55.5" y="-67.0" />
+      <point x="7803.679882342887" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="components.section.get.GetAllSectionCase" target="pages.PageFactory" relationship="DEPENDENCY">
+      <point x="150.0" y="79.0" />
+      <point x="6976.179882342887" y="3751.0" />
+      <point x="8277.500126216548" y="3751.0" />
+      <point x="8277.500126216548" y="3931.0" />
+      <point x="5546.996276595745" y="3931.0" />
+      <point x="177.0212765957449" y="-379.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.GetSection" relationship="TO_ONE">
+      <point x="143.82978723404267" y="-379.0" />
+      <point x="5513.804787234043" y="3841.0" />
+      <point x="8017.929882342888" y="3841.0" />
+      <point x="-83.25" y="67.0" />
+    </edge>
+    <edge source="components.section.GetSection" target="pages.PageFactory" relationship="TO_ONE">
+      <point x="-27.75" y="67.0" />
+      <point x="8073.429882342888" y="3761.0" />
+      <point x="7940.679882342888" y="3761.0" />
+      <point x="7940.679882342888" y="3941.0" />
+      <point x="5524.868617021277" y="3941.0" />
+      <point x="154.89361702127644" y="-379.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="controller.GroupController" relationship="DEPENDENCY">
+      <point x="-254.4680851063831" y="-379.0" />
+      <point x="5115.506914893617" y="3941.0" />
+      <point x="252.18333333333385" y="3941.0" />
+      <point x="252.18333333333385" y="3438.0" />
+      <point x="656.7007156762211" y="3438.0" />
+      <point x="-76.25" y="103.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetAllProductCase" relationship="CREATE">
+      <point x="-44.255319148935996" y="-379.0" />
+      <point x="5325.719680851064" y="3751.0" />
+      <point x="4083.020959549881" y="3751.0" />
+      <point x="79.0" y="67.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetProductsByGroupId" relationship="CREATE">
+      <point x="-199.14893617021335" y="-379.0" />
+      <point x="5170.826063829787" y="3891.0" />
+      <point x="1569.3126262165474" y="3891.0" />
+      <point x="83.5" y="79.0" />
+    </edge>
+    <edge source="components.product.get.GetProductById" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="113.25" y="-67.0" />
+      <point x="3109.270959549881" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="components.group.AddProductInGroup" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="198.22222222222217" y="-115.0" />
+      <point x="765.8936573229171" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="components.section.AddProductInSection" target="service.TableRenderer" relationship="CREATE">
+      <point x="-102.66666666666697" y="-115.0" />
+      <point x="4979.117382342887" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="components.group.AddProductInGroup" target="util.InputUtil.Companion" relationship="DEPENDENCY">
+      <point x="-99.11111111111131" y="-115.0" />
+      <point x="468.5603239895836" y="3388.0" />
+      <point x="33.0" y="3388.0" />
+      <point x="33.0" y="2905.0" />
+      <point x="2189.3500000000004" y="2905.0" />
+      <point x="2189.3500000000004" y="2548.0" />
+      <point x="6008.241191115852" y="2548.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="components.section.CreateSectionCase" target="controller.SectionController" relationship="DEPENDENCY">
+      <point x="0.0" y="-67.0" />
+      <point x="7201.679882342887" y="3388.0" />
+      <point x="6538.125126216548" y="3388.0" />
+      <point x="6538.125126216548" y="3318.0" />
+      <point x="6667.838101767362" y="3318.0" />
+      <point x="-98.5" y="175.0" />
+    </edge>
+    <edge source="model.Group.Companion" target="sql.entity.GroupMap" relationship="DEPENDENCY">
+      <point x="170.4000000000001" y="-42.0" />
+      <point x="952.7500000000005" y="1582.0" />
+      <point x="1317.3500000000004" y="1582.0" />
+      <point x="0.0" y="102.5" />
+    </edge>
+    <edge source="model.Section" target="model.Product" relationship="DEPENDENCY">
+      <point x="-169.5999999999999" y="91.0" />
+      <point x="888.7416666666672" y="591.0" />
+      <point x="537.7083333333339" y="591.0" />
+      <point x="-43.916666666666515" y="-139.0" />
+    </edge>
+    <edge source="model.Product" target="model.Section" relationship="DEPENDENCY">
+      <point x="219.58333333333348" y="-139.0" />
+      <point x="801.2083333333339" y="611.0" />
+      <point x="5519.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="model.Product.Companion" target="model.Section" relationship="DEPENDENCY">
+      <point x="102.75" y="-54.0" />
+      <point x="4952.854292883214" y="1582.0" />
+      <point x="4934.854292883214" y="1582.0" />
+      <point x="4934.854292883214" y="611.0" />
+      <point x="5519.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.CreateSectionCase" relationship="CREATE">
+      <point x="77.44680851063822" y="-379.0" />
+      <point x="5447.421808510639" y="3781.0" />
+      <point x="7279.429882342887" y="3781.0" />
+      <point x="77.75" y="67.0" />
+    </edge>
+    <edge source="components.product.CreateProductCase" target="controller.ProductController" relationship="DEPENDENCY">
+      <point x="-106.33333333333348" y="-67.0" />
+      <point x="2352.979292883214" y="3418.0" />
+      <point x="2742.504768434028" y="3418.0" />
+      <point x="2742.504768434028" y="3358.0" />
+      <point x="2655.004768434028" y="3358.0" />
+      <point x="-92.5" y="127.0" />
+    </edge>
+    <edge source="controller.ProductController" target="model.Product" relationship="DEPENDENCY">
+      <point x="-148.0" y="-127.0" />
+      <point x="2599.504768434028" y="2895.0" />
+      <point x="2178.3500000000004" y="2895.0" />
+      <point x="2178.3500000000004" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="service.GroupService" target="model.Product" relationship="DEPENDENCY">
+      <point x="-169.58333333333348" y="-115.0" />
+      <point x="779.3785772069941" y="2568.0" />
+      <point x="207.10000000000036" y="2568.0" />
+      <point x="207.10000000000036" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetProductsBySectionId" relationship="CREATE">
+      <point x="88.51063829787199" y="-379.0" />
+      <point x="5458.485638297872" y="3791.0" />
+      <point x="7464.679882342887" y="3791.0" />
+      <point x="-87.5" y="79.0" />
+    </edge>
+    <edge source="model.Product.ProductBuilder" target="model.Group" relationship="DEPENDENCY">
+      <point x="-77.08333333333348" y="-139.0" />
+      <point x="4743.770959549881" y="1252.0" />
+      <point x="424.97500000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1242.0" />
+      <point x="368.47500000000036" y="1242.0" />
+      <point x="-124.0" y="91.0" />
+    </edge>
+    <edge source="model.Section.SectionBuilder" target="model.Section" relationship="INNER_CLASS">
+      <point x="31.75" y="-103.0" />
+      <point x="5402.854292883214" y="973.0" />
+      <point x="5376.604292883214" y="973.0" />
+      <point x="5376.604292883214" y="621.0" />
+      <point x="5403.229292883214" y="621.0" />
+      <point x="5403.229292883214" y="601.0" />
+      <point x="1143.1416666666673" y="601.0" />
+      <point x="84.80000000000018" y="91.0" />
+    </edge>
+    <edge source="controller.SectionController" target="service.SectionService" relationship="TO_ONE">
+      <point x="43.777777777777374" y="-175.0" />
+      <point x="6810.115879545139" y="2865.0" />
+      <point x="6644.104292883214" y="2865.0" />
+      <point x="-99.0" y="127.0" />
+    </edge>
+    <edge source="components.section.AddProductInSection" target="controller.ProductController" relationship="TO_ONE">
+      <point x="-154.0" y="-115.0" />
+      <point x="4927.784049009554" y="3408.0" />
+      <point x="2950.192268434028" y="3408.0" />
+      <point x="2950.192268434028" y="3358.0" />
+      <point x="2840.004768434028" y="3358.0" />
+      <point x="92.5" y="127.0" />
+    </edge>
+    <edge source="repository.SectionRepository" target="model.Section" relationship="DEPENDENCY">
+      <point x="179.1111111111113" y="-163.0" />
+      <point x="6922.215403994325" y="2026.0" />
+      <point x="6997.6598484387705" y="2026.0" />
+      <point x="6997.6598484387705" y="611.0" />
+      <point x="5519.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="components.product.get.GetProductByDate" target="controller.ProductController" relationship="DEPENDENCY">
+      <point x="-118.5" y="-67.0" />
+      <point x="3549.520959549881" y="3418.0" />
+      <point x="2742.504768434028" y="3418.0" />
+      <point x="2742.504768434028" y="3358.0" />
+      <point x="2655.004768434028" y="3358.0" />
+      <point x="-92.5" y="127.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.get.GetSectionByName" relationship="TO_ONE">
+      <point x="33.191489361702224" y="-379.0" />
+      <point x="5403.166489361703" y="3741.0" />
+      <point x="6527.429882342887" y="3741.0" />
+      <point x="78.75" y="67.0" />
+    </edge>
+    <edge source="controller.ProductController" target="util.InputUtil.Companion" relationship="DEPENDENCY">
+      <point x="-74.0" y="-127.0" />
+      <point x="2673.504768434028" y="2905.0" />
+      <point x="2876.004768434028" y="2905.0" />
+      <point x="2876.004768434028" y="2548.0" />
+      <point x="6008.241191115852" y="2548.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="components.product.CreateProductCase" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="106.33333333333348" y="-67.0" />
+      <point x="2565.645959549881" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="repository.GroupRepository" target="sql.GroupEntityQueryWrapper" relationship="CREATE">
+      <point x="-30.916666666666742" y="-115.0" />
+      <point x="567.2250000000004" y="2006.0" />
+      <point x="476.85000000000036" y="2006.0" />
+      <point x="72.5" y="139.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="controller.ProductController" relationship="DEPENDENCY">
+      <point x="-243.40425531914934" y="-379.0" />
+      <point x="5126.570744680851" y="3931.0" />
+      <point x="334.1714351006949" y="3931.0" />
+      <point x="334.1714351006949" y="3418.0" />
+      <point x="2742.504768434028" y="3418.0" />
+      <point x="2742.504768434028" y="3358.0" />
+      <point x="2655.004768434028" y="3358.0" />
+      <point x="-92.5" y="127.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.ProductCase" relationship="TO_ONE">
+      <point x="221.2765957446809" y="-379.0" />
+      <point x="5591.251595744681" y="3891.0" />
+      <point x="8678.929882342887" y="3891.0" />
+      <point x="87.75" y="67.0" />
+    </edge>
+    <edge source="components.product.ProductCase" target="pages.PageFactory" relationship="TO_ONE">
+      <point x="-87.75" y="67.0" />
+      <point x="8503.429882342887" y="3761.0" />
+      <point x="7940.679882342888" y="3761.0" />
+      <point x="7940.679882342888" y="3941.0" />
+      <point x="5524.868617021277" y="3941.0" />
+      <point x="154.89361702127644" y="-379.0" />
+    </edge>
+    <edge source="components.product.get.GetProductByName" target="controller.ProductController" relationship="TO_ONE">
+      <point x="-40.375" y="-67.0" />
+      <point x="3288.145959549881" y="3408.0" />
+      <point x="2950.192268434028" y="3408.0" />
+      <point x="2950.192268434028" y="3358.0" />
+      <point x="2840.004768434028" y="3358.0" />
+      <point x="92.5" y="127.0" />
+    </edge>
+    <edge source="service.SectionService" target="model.Section" relationship="CREATE">
+      <point x="148.5" y="-127.0" />
+      <point x="6891.604292883214" y="2538.0" />
+      <point x="7014.104292883214" y="2538.0" />
+      <point x="7014.104292883214" y="611.0" />
+      <point x="5519.604292883214" y="611.0" />
+      <point x="5519.604292883214" y="591.0" />
+      <point x="1227.9416666666675" y="591.0" />
+      <point x="169.5999999999999" y="91.0" />
+    </edge>
+    <edge source="controller.ProductController" target="service.ProductService" relationship="DEPENDENCY">
+      <point x="0.0" y="-127.0" />
+      <point x="2747.504768434028" y="2925.0" />
+      <point x="3125.254768434028" y="2925.0" />
+      <point x="3125.254768434028" y="2885.0" />
+      <point x="2295.8500000000004" y="2885.0" />
+      <point x="-96.0" y="127.0" />
+    </edge>
+    <edge source="components.product.get.GetProductById" target="controller.ProductController" relationship="DEPENDENCY">
+      <point x="-113.25" y="-67.0" />
+      <point x="2882.770959549881" y="3418.0" />
+      <point x="2742.504768434028" y="3418.0" />
+      <point x="2742.504768434028" y="3358.0" />
+      <point x="2655.004768434028" y="3358.0" />
+      <point x="-92.5" y="127.0" />
+    </edge>
+    <edge source="components.section.get.GetAllSectionCase" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="-50.0" y="-79.0" />
+      <point x="6776.179882342887" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="components.product.get.GetProductsBySectionId" target="controller.SectionController" relationship="TO_ONE">
+      <point x="29.16666666666697" y="-79.0" />
+      <point x="7581.346549009555" y="3378.0" />
+      <point x="7283.29524387366" y="3378.0" />
+      <point x="7283.29524387366" y="3318.0" />
+      <point x="6864.838101767362" y="3318.0" />
+      <point x="98.5" y="175.0" />
+    </edge>
+    <edge source="components.product.get.GetProductsByGroupId" target="service.TableRenderer" relationship="CREATE">
+      <point x="83.5" y="-79.0" />
+      <point x="1569.3126262165474" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="model.Product" target="util.DateUtil.Companion" relationship="DEPENDENCY">
+      <point x="-131.75" y="-139.0" />
+      <point x="449.87500000000045" y="581.0" />
+      <point x="539.2317823352" y="581.0" />
+      <point x="539.2317823352" y="337.0" />
+      <point x="1217.2158313447544" y="337.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.group.GroupCase" relationship="CREATE">
+      <point x="199.14893617021244" y="-379.0" />
+      <point x="5569.123936170213" y="3871.0" />
+      <point x="8426.429882342887" y="3871.0" />
+      <point x="83.25" y="67.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetProductByDate" relationship="CREATE">
+      <point x="-77.44680851063822" y="-379.0" />
+      <point x="5292.528191489362" y="3781.0" />
+      <point x="3589.020959549881" y="3781.0" />
+      <point x="-79.0" y="67.0" />
+    </edge>
+    <edge source="components.group.GetGroup" target="pages.PageFactory" relationship="DEPENDENCY">
+      <point x="83.25" y="67.0" />
+      <point x="7942.429882342887" y="3751.0" />
+      <point x="8277.500126216548" y="3751.0" />
+      <point x="8277.500126216548" y="3931.0" />
+      <point x="5546.996276595745" y="3931.0" />
+      <point x="177.0212765957449" y="-379.0" />
+    </edge>
+    <edge source="repository.GroupRepository" target="model.Group" relationship="DEPENDENCY">
+      <point x="-154.58333333333348" y="-115.0" />
+      <point x="443.55833333333385" y="2026.0" />
+      <point x="248.85000000000036" y="2026.0" />
+      <point x="248.85000000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1242.0" />
+      <point x="368.47500000000036" y="1242.0" />
+      <point x="-124.0" y="91.0" />
+    </edge>
+    <edge source="service.ProductService" target="repository.ProductRepository" relationship="DEPENDENCY">
+      <point x="0.0" y="-127.0" />
+      <point x="2391.8500000000004" y="2558.0" />
+      <point x="1739.5436643941694" y="2558.0" />
+      <point x="1739.5436643941694" y="2548.0" />
+      <point x="1934.0436643941694" y="2548.0" />
+      <point x="102.25" y="235.0" />
+    </edge>
+    <edge source="components.section.AddProductInSection" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="102.66666666666697" y="-115.0" />
+      <point x="5184.450715676221" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="components.product.get.GetProductById" target="service.TableRenderer" relationship="CREATE">
+      <point x="37.75" y="-67.0" />
+      <point x="3033.770959549881" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="components.product.get.GetProductsByGroupId" target="controller.GroupController" relationship="TO_ONE">
+      <point x="27.83333333333337" y="-79.0" />
+      <point x="1513.645959549881" y="3428.0" />
+      <point x="1855.3369105403267" y="3428.0" />
+      <point x="1855.3369105403267" y="3348.0" />
+      <point x="809.2007156762211" y="3348.0" />
+      <point x="76.25" y="103.0" />
+    </edge>
+    <edge source="service.ProductService" target="model.Product" relationship="DEPENDENCY">
+      <point x="128.0" y="-127.0" />
+      <point x="2519.8500000000004" y="2538.0" />
+      <point x="2643.909049009554" y="2538.0" />
+      <point x="2643.909049009554" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetProductById" relationship="TO_ONE">
+      <point x="-121.70212765957513" y="-379.0" />
+      <point x="5248.272872340425" y="3821.0" />
+      <point x="2920.520959549881" y="3821.0" />
+      <point x="-75.5" y="67.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.get.GetAllSectionCase" relationship="CREATE">
+      <point x="55.31914893616977" y="-379.0" />
+      <point x="5425.29414893617" y="3761.0" />
+      <point x="6776.179882342887" y="3761.0" />
+      <point x="-50.0" y="79.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetProductsByGroupId" relationship="TO_ONE">
+      <point x="-210.21276595744712" y="-379.0" />
+      <point x="5159.762234042553" y="3901.0" />
+      <point x="1402.3126262165474" y="3901.0" />
+      <point x="-83.5" y="79.0" />
+    </edge>
+    <edge source="sql.SectionEntityQueryWrapper" target="interfaces.EntityQueryWrapper" relationship="REALIZATION">
+      <point x="-74.5" y="-151.0" />
+      <point x="6752.6598484387705" y="1592.0" />
+      <point x="1821.8500000000004" y="1592.0" />
+      <point x="0.0" y="78.5" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.CreateSectionCase" relationship="TO_ONE">
+      <point x="66.38297872340445" y="-379.0" />
+      <point x="5436.357978723405" y="3771.0" />
+      <point x="7123.929882342887" y="3771.0" />
+      <point x="-77.75" y="67.0" />
+    </edge>
+    <edge source="util.SectionUtil.Companion" target="util.InputUtil.Companion" relationship="DEPENDENCY">
+      <point x="-46.0" y="-42.0" />
+      <point x="7067.854292883214" y="2548.0" />
+      <point x="6008.241191115852" y="2548.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="util.ProductUtil.Companion" target="util.InputUtil.Companion" relationship="DEPENDENCY">
+      <point x="57.25" y="-54.0" />
+      <point x="4672.367382342888" y="2548.0" />
+      <point x="6008.241191115852" y="2548.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="model.Section.Companion" target="model.Section.SectionBuilder" relationship="CREATE">
+      <point x="0.0" y="-42.0" />
+      <point x="5318.604292883214" y="1582.0" />
+      <point x="5371.104292883214" y="1582.0" />
+      <point x="0.0" y="103.0" />
+    </edge>
+    <edge source="model.Group.Companion" target="model.Group.GroupBuilder" relationship="CREATE">
+      <point x="0.0" y="-42.0" />
+      <point x="0.0" y="103.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="sql.ProductEntityQueryWrapper" relationship="CREATE">
+      <point x="-62.92307692307713" y="-235.0" />
+      <point x="1768.8705874710922" y="1966.0" />
+      <point x="1590.3500000000004" y="1966.0" />
+      <point x="-74.5" y="151.0" />
+    </edge>
+    <edge source="components.group.get.GetAllGroupCase" target="controller.GroupController" relationship="DEPENDENCY">
+      <point x="-109.5" y="-67.0" />
+      <point x="2024.3126262165474" y="3438.0" />
+      <point x="656.7007156762211" y="3438.0" />
+      <point x="-76.25" y="103.0" />
+    </edge>
+    <edge source="components.section.AddProductInSection" target="util.InputUtil.Companion" relationship="DEPENDENCY">
+      <point x="0.0" y="-115.0" />
+      <point x="5081.784049009554" y="3348.0" />
+      <point x="5885.367382342887" y="3348.0" />
+      <point x="5885.367382342887" y="2548.0" />
+      <point x="6008.241191115852" y="2548.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="components.section.GetSection" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="-55.5" y="-67.0" />
+      <point x="8045.679882342888" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="components.section.get.GetSectionByName" target="service.TableRenderer" relationship="CREATE">
+      <point x="-118.125" y="-67.0" />
+      <point x="6330.554882342887" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="components.group.AddProductInGroup" target="controller.ProductController" relationship="TO_ONE">
+      <point x="99.11111111111109" y="-115.0" />
+      <point x="666.7825462118062" y="3408.0" />
+      <point x="2950.192268434028" y="3408.0" />
+      <point x="2950.192268434028" y="3358.0" />
+      <point x="2840.004768434028" y="3358.0" />
+      <point x="92.5" y="127.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.CreateProductCase" relationship="CREATE">
+      <point x="-132.7659574468089" y="-379.0" />
+      <point x="5237.2090425531915" y="3831.0" />
+      <point x="2539.0626262165474" y="3831.0" />
+      <point x="79.75" y="67.0" />
+    </edge>
+    <edge source="controller.SectionController" target="service.ProductService" relationship="DEPENDENCY">
+      <point x="-175.1111111111113" y="-175.0" />
+      <point x="6591.226990656251" y="2925.0" />
+      <point x="3125.254768434028" y="2925.0" />
+      <point x="3125.254768434028" y="2885.0" />
+      <point x="2295.8500000000004" y="2885.0" />
+      <point x="-96.0" y="127.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.AddProductInSection" relationship="CREATE">
+      <point x="-33.191489361702224" y="-379.0" />
+      <point x="5336.783510638298" y="3741.0" />
+      <point x="4966.284049009554" y="3741.0" />
+      <point x="-115.5" y="115.0" />
+    </edge>
+    <edge source="components.section.get.GetSectionById" target="controller.SectionController" relationship="TO_ONE">
+      <point x="109.875" y="-67.0" />
+      <point x="6234.554882342887" y="3378.0" />
+      <point x="7283.29524387366" y="3378.0" />
+      <point x="7283.29524387366" y="3318.0" />
+      <point x="6864.838101767362" y="3318.0" />
+      <point x="98.5" y="175.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.SectionCase" relationship="CREATE">
+      <point x="232.34042553191466" y="-379.0" />
+      <point x="5602.315425531915" y="3901.0" />
+      <point x="8871.929882342887" y="3901.0" />
+      <point x="28.75" y="67.0" />
+    </edge>
+    <edge source="components.section.AddProductInSection" target="model.Product" relationship="DEPENDENCY">
+      <point x="-51.33333333333303" y="-115.0" />
+      <point x="5030.450715676221" y="3358.0" />
+      <point x="4114.867382342888" y="3358.0" />
+      <point x="4114.867382342888" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="constant.SqlQueryConstant.Companion" target="constant.SqlQueryConstant" relationship="INNER_CLASS">
+      <point x="0.0" y="-16.5" />
+      <point x="0.0" y="54.5" />
+    </edge>
+    <edge source="sql.ProductEntityQueryWrapper" target="model.Product" relationship="DEPENDENCY">
+      <point x="37.25" y="-151.0" />
+      <point x="1702.1000000000004" y="1582.0" />
+      <point x="1680.3500000000004" y="1582.0" />
+      <point x="1680.3500000000004" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="util.InputUtil.Companion" target="util.DateUtil.Companion" relationship="DEPENDENCY">
+      <point x="119.25" y="-114.0" />
+      <point x="6127.491191115852" y="1976.0" />
+      <point x="6132.741191115852" y="1976.0" />
+      <point x="6132.741191115852" y="337.0" />
+      <point x="1217.2158313447544" y="337.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="controller.GroupController" target="service.GroupService" relationship="TO_ONE">
+      <point x="61.0" y="-103.0" />
+      <point x="793.9507156762211" y="2895.0" />
+      <point x="1050.7119105403276" y="2895.0" />
+      <point x="101.75" y="115.0" />
+    </edge>
+    <edge source="components.section.AddProductInSection" target="controller.SectionController" relationship="TO_ONE">
+      <point x="205.33333333333303" y="-115.0" />
+      <point x="5287.117382342887" y="3378.0" />
+      <point x="7283.29524387366" y="3378.0" />
+      <point x="7283.29524387366" y="3318.0" />
+      <point x="6864.838101767362" y="3318.0" />
+      <point x="98.5" y="175.0" />
+    </edge>
+    <edge source="model.Product.Companion" target="sql.entity.SectionMap" relationship="DEPENDENCY">
+      <point x="171.25" y="-54.0" />
+      <point x="5021.354292883214" y="1602.0" />
+      <point x="5072.779292883214" y="1602.0" />
+      <point x="0.0" y="102.5" />
+    </edge>
+    <edge source="components.group.GroupCase" target="pages.PageFactory" relationship="DEPENDENCY">
+      <point x="-27.75" y="67.0" />
+      <point x="8315.429882342887" y="3751.0" />
+      <point x="8277.500126216548" y="3751.0" />
+      <point x="8277.500126216548" y="3931.0" />
+      <point x="5546.996276595745" y="3931.0" />
+      <point x="177.0212765957449" y="-379.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="pages.Pages" relationship="DEPENDENCY">
+      <point x="110.63829787234044" y="-379.0" />
+      <point x="5480.613297872341" y="3811.0" />
+      <point x="7737.679882342887" y="3811.0" />
+      <point x="7737.679882342887" y="3358.0" />
+      <point x="8092.400601767362" y="3358.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="components.product.get.GetProductByDate" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="118.5" y="-67.0" />
+      <point x="3786.520959549881" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="model.Group" target="model.Product" relationship="TO_MANY">
+      <point x="93.0" y="-91.0" />
+      <point x="585.4750000000004" y="963.0" />
+      <point x="535.2317823351996" y="963.0" />
+      <point x="535.2317823351996" y="953.0" />
+      <point x="581.6250000000005" y="953.0" />
+      <point x="0.0" y="139.0" />
+    </edge>
+    <edge source="model.Product" target="model.Group" relationship="TO_MANY">
+      <point x="-210.80000000000018" y="139.0" />
+      <point x="370.8250000000003" y="953.0" />
+      <point x="461.47500000000036" y="953.0" />
+      <point x="-31.0" y="-91.0" />
+    </edge>
+    <edge source="model.Group.Companion" target="model.Group" relationship="INNER_CLASS">
+      <point x="-85.19999999999982" y="-42.0" />
+      <point x="697.1500000000005" y="1572.0" />
+      <point x="477.47500000000036" y="1572.0" />
+      <point x="477.47500000000036" y="1232.0" />
+      <point x="492.47500000000036" y="1232.0" />
+      <point x="0.0" y="91.0" />
+    </edge>
+    <edge source="model.Product.Companion" target="sql.entity.ProductMap" relationship="DEPENDENCY">
+      <point x="-171.25" y="-54.0" />
+      <point x="4678.854292883214" y="1612.0" />
+      <point x="2473.159049009554" y="1612.0" />
+      <point x="0.0" y="126.5" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.AddProductInSection" relationship="TO_ONE">
+      <point x="-22.127659574468453" y="-379.0" />
+      <point x="5347.847340425532" y="3731.0" />
+      <point x="5197.284049009554" y="3731.0" />
+      <point x="115.5" y="115.0" />
+    </edge>
+    <edge source="components.product.get.GetAllProductCase" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="118.5" y="-67.0" />
+      <point x="4122.520959549881" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="model.Product" target="model.Entity" relationship="GENERALIZATION">
+      <point x="-219.58333333333303" y="-139.0" />
+      <point x="362.0416666666674" y="571.0" />
+      <point x="528.2317823352" y="571.0" />
+      <point x="528.2317823352" y="347.0" />
+      <point x="877.7158313447544" y="347.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.GetSection" relationship="CREATE">
+      <point x="165.9574468085102" y="-379.0" />
+      <point x="5535.932446808511" y="3851.0" />
+      <point x="8128.929882342888" y="3851.0" />
+      <point x="27.75" y="67.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="service.DatabaseService" relationship="DEPENDENCY">
+      <point x="94.38461538461524" y="-235.0" />
+      <point x="1926.1782797787846" y="2016.0" />
+      <point x="4209.617382342888" y="2016.0" />
+      <point x="-83.0" y="91.0" />
+    </edge>
+    <edge source="model.Group" target="model.Entity" relationship="GENERALIZATION">
+      <point x="-155.0" y="-91.0" />
+      <point x="337.47500000000036" y="973.0" />
+      <point x="0.0" y="973.0" />
+      <point x="0.0" y="347.0" />
+      <point x="877.7158313447544" y="347.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="components.section.get.GetAllSectionCase" target="controller.SectionController" relationship="TO_ONE">
+      <point x="150.0" y="-79.0" />
+      <point x="6976.179882342887" y="3378.0" />
+      <point x="7283.29524387366" y="3378.0" />
+      <point x="7283.29524387366" y="3318.0" />
+      <point x="6864.838101767362" y="3318.0" />
+      <point x="98.5" y="175.0" />
+    </edge>
+    <edge source="components.product.get.GetProductsBySectionId" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="-87.5" y="-79.0" />
+      <point x="7464.679882342887" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.group.AddProductInGroup" relationship="TO_ONE">
+      <point x="-232.34042553191557" y="-379.0" />
+      <point x="5137.634574468085" y="3921.0" />
+      <point x="456.1714351006949" y="3921.0" />
+      <point x="-111.5" y="115.0" />
+    </edge>
+    <edge source="components.group.AddProductInGroup" target="controller.ProductController" relationship="DEPENDENCY">
+      <point x="49.55555555555566" y="-115.0" />
+      <point x="617.2269906562506" y="3418.0" />
+      <point x="2742.504768434028" y="3418.0" />
+      <point x="2742.504768434028" y="3358.0" />
+      <point x="2655.004768434028" y="3358.0" />
+      <point x="-92.5" y="127.0" />
+    </edge>
+    <edge source="repository.GroupRepository" target="service.DatabaseService" relationship="TO_ONE">
+      <point x="154.58333333333337" y="-115.0" />
+      <point x="752.7250000000008" y="2006.0" />
+      <point x="4219.617382342888" y="2006.0" />
+      <point x="4219.617382342888" y="1976.0" />
+      <point x="4375.617382342888" y="1976.0" />
+      <point x="83.0" y="91.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.get.GetSectionById" relationship="CREATE">
+      <point x="0.0" y="-379.0" />
+      <point x="5369.975" y="3711.0" />
+      <point x="6051.429882342887" y="3711.0" />
+      <point x="-73.25" y="67.0" />
+    </edge>
+    <edge source="repository.SectionRepository" target="model.Section.Companion" relationship="DEPENDENCY">
+      <point x="-44.777777777777374" y="-163.0" />
+      <point x="6698.326515105437" y="1986.0" />
+      <point x="5318.604292883214" y="1986.0" />
+      <point x="0.0" y="42.0" />
+    </edge>
+    <edge source="service.TableRenderer" target="service.TableRenderer.Column" relationship="CREATE">
+      <point x="95.66666666666669" y="-127.0" />
+      <point x="3806.450715676221" y="2875.0" />
+      <point x="3421.379768434028" y="2875.0" />
+      <point x="77.33333333333331" y="78.5" />
+    </edge>
+    <edge source="pages.PageFactory" target="controller.SectionController" relationship="DEPENDENCY">
+      <point x="-11.063829787233772" y="-379.0" />
+      <point x="5358.911170212767" y="3721.0" />
+      <point x="5323.284049009554" y="3721.0" />
+      <point x="5323.284049009554" y="3388.0" />
+      <point x="6538.125126216548" y="3388.0" />
+      <point x="6538.125126216548" y="3318.0" />
+      <point x="6667.838101767362" y="3318.0" />
+      <point x="-98.5" y="175.0" />
+    </edge>
+    <edge source="repository.SectionRepository" target="service.DatabaseService" relationship="TO_ONE">
+      <point x="-134.33333333333303" y="-163.0" />
+      <point x="6608.770959549882" y="2006.0" />
+      <point x="4219.617382342888" y="2006.0" />
+      <point x="4219.617382342888" y="1976.0" />
+      <point x="4375.617382342888" y="1976.0" />
+      <point x="83.0" y="91.0" />
+    </edge>
+    <edge source="service.TableRenderer.Column" target="service.TableRenderer" relationship="INNER_CLASS">
+      <point x="-77.33333333333337" y="78.5" />
+      <point x="3266.7131017673614" y="2895.0" />
+      <point x="3615.1173823428876" y="2895.0" />
+      <point x="-95.66666666666674" y="-127.0" />
+    </edge>
+    <edge source="controller.ProductController" target="service.ProductService" relationship="TO_ONE">
+      <point x="74.0" y="-127.0" />
+      <point x="2821.504768434028" y="2915.0" />
+      <point x="3135.754768434028" y="2915.0" />
+      <point x="3135.754768434028" y="2875.0" />
+      <point x="2487.8500000000004" y="2875.0" />
+      <point x="96.0" y="127.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="model.Group" relationship="DEPENDENCY">
+      <point x="-157.30769230769238" y="-235.0" />
+      <point x="1674.485972086477" y="1996.0" />
+      <point x="1205.3500000000004" y="1996.0" />
+      <point x="1205.3500000000004" y="1252.0" />
+      <point x="424.97500000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1242.0" />
+      <point x="368.47500000000036" y="1242.0" />
+      <point x="-124.0" y="91.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="sql.ProductEntityQueryWrapper" relationship="TO_ONE">
+      <point x="-31.461538461538566" y="-235.0" />
+      <point x="1800.3321259326308" y="1956.0" />
+      <point x="1739.3500000000004" y="1956.0" />
+      <point x="74.5" y="151.0" />
+    </edge>
+    <edge source="components.section.get.GetSectionByName" target="controller.SectionController" relationship="DEPENDENCY">
+      <point x="39.375" y="-67.0" />
+      <point x="6488.054882342887" y="3388.0" />
+      <point x="6538.125126216548" y="3388.0" />
+      <point x="6538.125126216548" y="3318.0" />
+      <point x="6667.838101767362" y="3318.0" />
+      <point x="-98.5" y="175.0" />
+    </edge>
+    <edge source="repository.SectionRepository" target="sql.SectionEntityQueryWrapper" relationship="TO_ONE">
+      <point x="89.55555555555566" y="-163.0" />
+      <point x="6832.6598484387705" y="2006.0" />
+      <point x="6901.6598484387705" y="2006.0" />
+      <point x="74.5" y="151.0" />
+    </edge>
+    <edge source="components.product.ProductCase" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="-58.5" y="-67.0" />
+      <point x="8532.679882342887" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="model.Section" target="model.Entity" relationship="GENERALIZATION">
+      <point x="-106.0" y="-91.0" />
+      <point x="952.3416666666672" y="347.0" />
+      <point x="877.7158313447544" y="347.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="model.Product.ProductBuilder" target="model.Group" relationship="TO_MANY">
+      <point x="-46.25" y="-139.0" />
+      <point x="4774.604292883214" y="1232.0" />
+      <point x="616.4750000000004" y="1232.0" />
+      <point x="124.0" y="91.0" />
+    </edge>
+    <edge source="components.group.AddProductInGroup" target="model.Product" relationship="DEPENDENCY">
+      <point x="-198.22222222222217" y="-115.0" />
+      <point x="369.44921287847274" y="3408.0" />
+      <point x="11.0" y="3408.0" />
+      <point x="11.0" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="components.section.get.GetSectionById" target="controller.SectionController" relationship="DEPENDENCY">
+      <point x="36.625" y="-67.0" />
+      <point x="6161.304882342887" y="3388.0" />
+      <point x="6538.125126216548" y="3388.0" />
+      <point x="6538.125126216548" y="3318.0" />
+      <point x="6667.838101767362" y="3318.0" />
+      <point x="-98.5" y="175.0" />
+    </edge>
+    <edge source="components.product.ProductCase" target="pages.Pages" relationship="DEPENDENCY">
+      <point x="58.5" y="-67.0" />
+      <point x="8649.679882342887" y="3358.0" />
+      <point x="8092.400601767362" y="3358.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="components.section.GetSection" target="pages.Pages" relationship="DEPENDENCY">
+      <point x="55.5" y="-67.0" />
+      <point x="8156.679882342888" y="3358.0" />
+      <point x="8092.400601767362" y="3358.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="model.Group.GroupBuilder" target="model.Group" relationship="CREATE">
+      <point x="-78.75" y="-103.0" />
+      <point x="703.6000000000004" y="1252.0" />
+      <point x="424.97500000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1242.0" />
+      <point x="368.47500000000036" y="1242.0" />
+      <point x="-124.0" y="91.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.CreateProductCase" relationship="TO_ONE">
+      <point x="-143.82978723404267" y="-379.0" />
+      <point x="5226.145212765958" y="3841.0" />
+      <point x="2379.5626262165474" y="3841.0" />
+      <point x="-79.75" y="67.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="pages.UIContainer" relationship="CREATE">
+      <point x="254.4680851063831" y="-379.0" />
+      <point x="5624.4430851063835" y="3921.0" />
+      <point x="9105.679882342887" y="3921.0" />
+      <point x="0.0" y="55.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetProductByDate" relationship="TO_ONE">
+      <point x="-66.38297872340445" y="-379.0" />
+      <point x="5303.592021276596" y="3771.0" />
+      <point x="3747.020959549881" y="3771.0" />
+      <point x="79.0" y="67.0" />
+    </edge>
+    <edge source="service.GroupService" target="repository.ProductRepository" relationship="TO_ONE">
+      <point x="101.75" y="-115.0" />
+      <point x="1050.7119105403276" y="2568.0" />
+      <point x="1729.5436643941694" y="2568.0" />
+      <point x="-102.25" y="235.0" />
+    </edge>
+    <edge source="model.Section" target="model.Product" relationship="TO_MANY">
+      <point x="-84.80000000000018" y="91.0" />
+      <point x="973.541666666667" y="601.0" />
+      <point x="625.541666666667" y="601.0" />
+      <point x="43.916666666666515" y="-139.0" />
+    </edge>
+    <edge source="repository.GroupRepository" target="sql.GroupEntityQueryWrapper" relationship="TO_ONE">
+      <point x="-92.75" y="-115.0" />
+      <point x="505.39166666666733" y="2016.0" />
+      <point x="331.85000000000036" y="2016.0" />
+      <point x="-72.5" y="139.0" />
+    </edge>
+    <edge source="components.section.get.GetAllSectionCase" target="service.TableRenderer" relationship="CREATE">
+      <point x="-150.0" y="-79.0" />
+      <point x="6676.179882342887" y="3398.0" />
+      <point x="3710.784049009554" y="3398.0" />
+      <point x="0.0" y="127.0" />
+    </edge>
+    <edge source="service.AuthService" target="service.DatabaseService" relationship="DEPENDENCY">
+      <point x="-84.25" y="-79.0" />
+      <point x="-83.0" y="91.0" />
+    </edge>
+    <edge source="components.group.GroupCase" target="pages.Pages" relationship="DEPENDENCY">
+      <point x="55.5" y="-67.0" />
+      <point x="8398.679882342887" y="3358.0" />
+      <point x="8092.400601767362" y="3358.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="controller.GroupController" target="service.GroupService" relationship="DEPENDENCY">
+      <point x="0.0" y="-103.0" />
+      <point x="732.9507156762211" y="2885.0" />
+      <point x="847.2119105403276" y="2885.0" />
+      <point x="-101.75" y="115.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetProductByName" relationship="CREATE">
+      <point x="-99.57446808510667" y="-379.0" />
+      <point x="5270.400531914894" y="3801.0" />
+      <point x="3247.770959549881" y="3801.0" />
+      <point x="-80.75" y="67.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="sql.entity.GroupMap" relationship="DEPENDENCY">
+      <point x="-125.84615384615381" y="-235.0" />
+      <point x="1705.9475105480155" y="1986.0" />
+      <point x="1317.3500000000004" y="1986.0" />
+      <point x="0.0" y="102.5" />
+    </edge>
+    <edge source="components.section.SectionCase" target="pages.PageFactory" relationship="DEPENDENCY">
+      <point x="-28.75" y="67.0" />
+      <point x="8814.429882342887" y="3751.0" />
+      <point x="8277.500126216548" y="3751.0" />
+      <point x="8277.500126216548" y="3931.0" />
+      <point x="5546.996276595745" y="3931.0" />
+      <point x="177.0212765957449" y="-379.0" />
+    </edge>
+    <edge source="model.Section.SectionBuilder" target="model.Product" relationship="DEPENDENCY">
+      <point x="-31.75" y="-103.0" />
+      <point x="5339.354292883214" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="components.product.get.GetProductByName" target="controller.ProductController" relationship="DEPENDENCY">
+      <point x="-121.125" y="-67.0" />
+      <point x="3207.395959549881" y="3418.0" />
+      <point x="2742.504768434028" y="3418.0" />
+      <point x="2742.504768434028" y="3358.0" />
+      <point x="2655.004768434028" y="3358.0" />
+      <point x="-92.5" y="127.0" />
+    </edge>
+    <edge source="components.group.CreateGroupCase" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="98.33333333333348" y="-67.0" />
+      <point x="1918.645959549881" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="service.GroupService" target="model.Group" relationship="CREATE">
+      <point x="-101.75" y="-115.0" />
+      <point x="847.2119105403276" y="2558.0" />
+      <point x="248.85000000000036" y="2558.0" />
+      <point x="248.85000000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1252.0" />
+      <point x="424.97500000000036" y="1242.0" />
+      <point x="368.47500000000036" y="1242.0" />
+      <point x="-124.0" y="91.0" />
+    </edge>
+    <edge source="model.Section.Companion" target="sql.entity.SectionMap" relationship="DEPENDENCY">
+      <point x="-194.39999999999964" y="-42.0" />
+      <point x="5124.204292883214" y="1602.0" />
+      <point x="5072.779292883214" y="1602.0" />
+      <point x="0.0" y="102.5" />
+    </edge>
+    <edge source="components.product.get.GetProductsByGroupId" target="util.InputUtil.Companion" relationship="DEPENDENCY">
+      <point x="-27.833333333333485" y="-79.0" />
+      <point x="1457.979292883214" y="3358.0" />
+      <point x="1565.3126262165479" y="3358.0" />
+      <point x="1565.3126262165479" y="2925.0" />
+      <point x="2594.3500000000004" y="2925.0" />
+      <point x="2594.3500000000004" y="2548.0" />
+      <point x="6008.241191115852" y="2548.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.group.get.GetAllGroupCase" relationship="CREATE">
+      <point x="-154.89361702127644" y="-379.0" />
+      <point x="5215.081382978724" y="3851.0" />
+      <point x="2206.8126262165474" y="3851.0" />
+      <point x="73.0" y="67.0" />
+    </edge>
+    <edge source="components.product.GetProduct" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="56.5" y="-67.0" />
+      <point x="5436.975" y="4763.0" />
+      <point x="8968.679882342887" y="4763.0" />
+      <point x="8968.679882342887" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="components.section.CreateSectionCase" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="-103.66666666666697" y="-67.0" />
+      <point x="7098.013215676221" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.product.get.GetProductById" relationship="CREATE">
+      <point x="-110.63829787234044" y="-379.0" />
+      <point x="5259.33670212766" y="3811.0" />
+      <point x="3071.520959549881" y="3811.0" />
+      <point x="75.5" y="67.0" />
+    </edge>
+    <edge source="components.product.GetProduct" target="pages.Pages" relationship="DEPENDENCY">
+      <point x="94.16666666666606" y="-67.0" />
+      <point x="5474.641666666666" y="4773.0" />
+      <point x="8979.679882342887" y="4773.0" />
+      <point x="8979.679882342887" y="3358.0" />
+      <point x="8092.400601767362" y="3358.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.get.GetSectionByName" relationship="CREATE">
+      <point x="22.127659574467543" y="-379.0" />
+      <point x="5392.102659574468" y="3731.0" />
+      <point x="6369.929882342887" y="3731.0" />
+      <point x="-78.75" y="67.0" />
+    </edge>
+    <edge source="components.product.get.GetProductsByGroupId" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="139.16666666666674" y="-79.0" />
+      <point x="1624.979292883214" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="components.group.GroupCase" target="interfaces.UICase" relationship="REALIZATION">
+      <point x="-55.5" y="-67.0" />
+      <point x="8287.679882342887" y="3368.0" />
+      <point x="6201.762024449186" y="3368.0" />
+      <point x="6201.762024449186" y="3328.0" />
+      <point x="9061.013215676223" y="3328.0" />
+      <point x="-45.66666666666606" y="42.5" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.group.AddProductInGroup" relationship="CREATE">
+      <point x="-221.2765957446809" y="-379.0" />
+      <point x="5148.6984042553195" y="3911.0" />
+      <point x="679.1714351006949" y="3911.0" />
+      <point x="111.5" y="115.0" />
+    </edge>
+    <edge source="repository.ProductRepository" target="model.Product" relationship="CREATE">
+      <point x="0.0" y="-235.0" />
+      <point x="1831.7936643941694" y="1956.0" />
+      <point x="1963.3500000000004" y="1956.0" />
+      <point x="1963.3500000000004" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="components.product.get.GetProductsBySectionId" target="util.InputUtil.Companion" relationship="DEPENDENCY">
+      <point x="87.5" y="-79.0" />
+      <point x="7639.679882342887" y="3338.0" />
+      <point x="7852.308333333334" y="3338.0" />
+      <point x="7852.308333333334" y="2548.0" />
+      <point x="6008.241191115852" y="2548.0" />
+      <point x="0.0" y="114.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.section.get.GetSectionById" relationship="TO_ONE">
+      <point x="11.063829787233772" y="-379.0" />
+      <point x="5381.038829787234" y="3721.0" />
+      <point x="6197.929882342887" y="3721.0" />
+      <point x="73.25" y="67.0" />
+    </edge>
+    <edge source="controller.GroupController" target="model.Product" relationship="DEPENDENCY">
+      <point x="-122.0" y="-103.0" />
+      <point x="610.9507156762211" y="2895.0" />
+      <point x="55.0" y="2895.0" />
+      <point x="55.0" y="983.0" />
+      <point x="2208.479292883214" y="983.0" />
+      <point x="2208.479292883214" y="953.0" />
+      <point x="687.0250000000005" y="953.0" />
+      <point x="105.40000000000009" y="139.0" />
+    </edge>
+    <edge source="pages.PageFactory" target="components.group.GetGroup" relationship="CREATE">
+      <point x="121.70212765957422" y="-379.0" />
+      <point x="5491.677127659575" y="3821.0" />
+      <point x="7775.929882342887" y="3821.0" />
+      <point x="-83.25" y="67.0" />
+    </edge>
+    <edge source="repository.SectionRepository" target="service.DatabaseService" relationship="DEPENDENCY">
+      <point x="-179.1111111111113" y="-163.0" />
+      <point x="6563.993181772103" y="2016.0" />
+      <point x="4209.617382342888" y="2016.0" />
+      <point x="-83.0" y="91.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.16666666666666666" showDependencies="true" x="4646.0" y="2338.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
