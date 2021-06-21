@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>b312c179-4686-429d-a11e-52c8b40e1523.SCHEMA:BsuirShop</OriginalElement>
+  <nodes>
+    <node x="420.0" y="24.0">b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.group</node>
+    <node x="185.625" y="0.0">b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.product</node>
+    <node x="295.25" y="231.0">b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.groups_productions</node>
+    <node x="0.0" y="24.0">b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.section</node>
+    <node x="83.25" y="231.0">b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.section_products</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.section_products" target="b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.section" relationship="REFERENCES">
+      <point x="-48.0" y="-42.0" />
+      <point x="131.25" y="206.0" />
+      <point x="79.0" y="206.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.groups_productions" target="b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.group" relationship="REFERENCES">
+      <point x="51.75" y="-42.0" />
+      <point x="450.5" y="206.0" />
+      <point x="499.0" y="206.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.groups_productions" target="b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.product" relationship="REFERENCES">
+      <point x="-51.75" y="-42.0" />
+      <point x="347.0" y="206.0" />
+      <point x="287.125" y="206.0" />
+      <point x="0.0" y="90.5" />
+    </edge>
+    <edge source="b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.section_products" target="b312c179-4686-429d-a11e-52c8b40e1523.TABLE:BsuirShop.product" relationship="REFERENCES">
+      <point x="48.0" y="-42.0" />
+      <point x="227.25" y="206.0" />
+      <point x="287.125" y="206.0" />
+      <point x="0.0" y="90.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="289.0" y="157.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
